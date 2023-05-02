@@ -19,14 +19,14 @@ export const theme = (customization) => {
     const themeOption = {
         colors: color,
         heading: color.grey900,
-        paper: color.paper,
-        backgroundDefault: color.paper,
-        background: color.primaryLight,
+        paper: '#F6FBFF',
+        backgroundDefault: '#F6FBFF',
+        background: '#F6FBFF',
         darkTextPrimary: color.grey700,
         darkTextSecondary: color.grey500,
         textDark: color.grey900,
-        menuSelected: color.primaryLight,
-        menuSelectedBack: color.primaryMain,
+        menuSelected: '#FFFF',
+        menuSelectedBack: '#1E49E2',
         divider: color.grey200,
         customization
     };
@@ -37,7 +37,7 @@ export const theme = (customization) => {
         mixins: {
             toolbar: {
                 minHeight: '48px',
-                padding: '16px',
+                padding: '6px',
                 '@media (min-width: 600px)': {
                     minHeight: '48px'
                 }
