@@ -20,8 +20,8 @@ const CardWrapper = styled(MainCard)(({ theme }) => ({
     '&:after': {
         content: '""',
         position: 'absolute',
-        width: 210,
-        height: 210,
+        width: 100,
+        height: 100,
         background: '#ffff'
     }
 }));
@@ -54,7 +54,7 @@ const RanCard = ({ isLoading }) => {
                         <Grid container direction="column" style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
                             <Grid item>
                                 <Grid>
-                                    <Grid style={{ width: 120, height: 120 }}>
+                                    <Grid style={{ width: 90, height: 90 }}>
                                         <CircularProgressbar value={value} maxValue={1} text={`${value * 100}%`} />
                                     </Grid>
                                 </Grid>
