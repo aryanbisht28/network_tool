@@ -8,6 +8,7 @@ import { Avatar, Box, Grid, Menu, MenuItem, Typography } from '@mui/material';
 // project imports
 import MainCard from 'ui-component/cards/MainCard';
 import SkeletonEarningCard from 'ui-component/cards/Skeleton/EarningCard';
+import MyLocationIcon from '@mui/icons-material/MyLocation';
 
 const CardWrapper = styled(MainCard)(({ theme }) => ({
     backgroundColor: '#2a9df4',
