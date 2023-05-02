@@ -11,9 +11,35 @@ function BarChart() {
     const options = {
         responsive: true,
         plugins: {
+            scales: {
+                x: {
+                    stacked: true,
+                    grid: {
+                        display: false
+                    }
+                },
+                y: {
+                    beginAtZero: true,
+                    stacked: true,
+                    grid: {
+                        display: false
+                    }
+                }
+            },
             legend: {
-                position: 'top'
+                position: 'top',
+                labels: {
+                    color: '#000000',
+                    font: {
+                        size: 10
+                    },
+                    align: 'center',
+                    padding: 5,
+                    usePointStyle: true,
+                    boxWidth: 6
+                }
             }
+
             // title: {
             //     display: true,
             //     text: 'Monthly Network Performance'
@@ -29,22 +55,22 @@ function BarChart() {
             {
                 label: 'RAN',
                 data: [98, 90, 94, 90, 96, 98],
-                borderColor: '#8884d8'
+                backgroundColor: '#8884d8'
             },
             {
                 label: 'Transmission',
                 data: [97, 90, 98, 96, 98, 99],
-                borderColor: '#82ca9d'
+                backgroundColor: '#82ca9d'
             },
             {
                 label: 'Core(CS)',
                 data: [99, 97, 98, 99, 99, 99],
-                borderColor: '#480ca8'
+                backgroundColor: '#480ca8'
             },
             {
                 label: 'Core(PS)',
                 data: [98, 99, 98, 97, 98, 99],
-                borderColor: '#ffc8dd'
+                backgroundColor: '#ffc8dd'
             }
         ]
     };
