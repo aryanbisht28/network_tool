@@ -77,20 +77,20 @@ const MainLayout = () => {
         <Box sx={{ display: 'flex' }}>
             <CssBaseline />
             {/* header */}
-            <AppBar
+            {/* <AppBar
                 enableColorOnDark
                 position="fixed"
                 color="inherit"
                 elevation={0}
                 sx={{
-                    bgcolor: theme.palette.background.default,
+                    bgcolor: '#00338D',
                     transition: leftDrawerOpened ? theme.transitions.create('width') : 'none'
                 }}
             >
                 {/* <Toolbar> */}
-                    {/* <Header handleLeftDrawerToggle={handleLeftDrawerToggle} /> */}
-                {/* </Toolbar> */}
-            </AppBar>
+            {/* <Header handleLeftDrawerToggle={handleLeftDrawerToggle} /> */}
+            {/* </Toolbar> */}
+            {/* </AppBar> */}
 
             {/* drawer */}
             <Sidebar drawerOpen={!matchDownMd ? leftDrawerOpened : !leftDrawerOpened} drawerToggle={handleLeftDrawerToggle} />
