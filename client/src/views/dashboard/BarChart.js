@@ -57,7 +57,8 @@ function BarChart() {
                 marginBottom: '1%',
                 padding: '1%',
                 display: 'flex',
-                flexDirection: 'column'
+                flexDirection: 'column',
+                backgroundColor: '#ffff'
                 // justifyContent: 'center',
                 // alignItems: 'center'
             }}

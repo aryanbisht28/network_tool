@@ -87,10 +87,16 @@ const MainLayout = () => {
                     transition: leftDrawerOpened ? theme.transitions.create('width') : 'none'
                 }}
             >
-                {/* <Toolbar> */}
+                // {/* <Toolbar> */}
+            {/* <<<<<<< HEAD
             {/* <Header handleLeftDrawerToggle={handleLeftDrawerToggle} /> */}
             {/* </Toolbar> */}
             {/* </AppBar> */}
+            {/* ======= */}
+            {/* <Header handleLeftDrawerToggle={handleLeftDrawerToggle} /> */}
+            {/* //     {/* </Toolbar> */}
+            {/* // </AppBar> */}
+            {/* >>>>>>> 43f37a4498e6b9211f5d354de9ba546e85954f0f */}
 
             {/* drawer */}
             <Sidebar drawerOpen={!matchDownMd ? leftDrawerOpened : !leftDrawerOpened} drawerToggle={handleLeftDrawerToggle} />

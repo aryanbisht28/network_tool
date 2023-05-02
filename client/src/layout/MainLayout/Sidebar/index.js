@@ -45,7 +45,7 @@ const Sidebar = ({ drawerOpen, drawerToggle, window }) => {
                 {/* <Box sx={{ position: 'relative', display: 'inline-block' }}> */}
                 <h2>
                     {' '}
-                    Roaming Assurance
+                    Network Tool
                     <hr style={{ width: '100%' }}></hr>
                 </h2>
                 {/* <div
