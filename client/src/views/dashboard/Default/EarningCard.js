@@ -43,7 +43,7 @@ const EarningCard = ({ isLoading, name, value }) => {
                 <SkeletonEarningCard />
             ) : (
                 <CardWrapper border={false} content={false}>
-                    <Box sx={{ p: 1 }}>
+                    <Box>
                         <Grid container direction="column">
                             <Grid item>
                                 <Grid>
