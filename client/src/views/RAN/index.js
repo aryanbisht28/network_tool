@@ -28,53 +28,57 @@ function Index() {
         setKpi(event.target.value);
     };
     return (
-        <Grid container xs={12}>
-            <Grid container spacing={gridSpacing} xs={12}>
-                <Grid item xs={2.4}>
-                    <Site />
+        <>
+            <div style={{ marginBottom: '1rem', width: '100%', marginTop: '-90px' }}>
+                <Header title={'RAN'} subtitle={''} />
+            </div>
+            <Grid container xs={12}>
+                <Grid container spacing={gridSpacing} xs={12}>
+                    <Grid item xs={2.4}>
+                        <Site />
+                    </Grid>
+                    <Grid item xs={2.4}>
+                        <Incident />
+                    </Grid>
+                    <Grid item xs={2.4}>
+                        <Assign />
+                    </Grid>
+                    <Grid item xs={2.4}>
+                        <Breached />
+                    </Grid>
+                    <Grid item xs={2.4}>
+                        <Ticket />
+                    </Grid>
                 </Grid>
-                <Grid item xs={2.4}>
-                    <Incident />
+                <Grid item xs={4}>
+                    <Card>
+                        <GaugeChart />
+                        <PieCharts />
+                    </Card>
                 </Grid>
-                <Grid item xs={2.4}>
-                    <Assign />
-                </Grid>
-                <Grid item xs={2.4}>
-                    <Breached />
-                </Grid>
-                <Grid item xs={2.4}>
-                    <Ticket />
-                </Grid>
-            </Grid>
-            <Grid item xs={4}>
-                <Card>
-                    <GaugeChart />
-                    <PieCharts />
-                </Card>
-            </Grid>
-            <Grid item xs={8}>
-                <Card style={{ marginLeft: '1rem', height: '77.5vh' }}>
-                    <div style={{ display: 'flex', justifyContent: 'space-around', margin: '0.5rem' }}>
-                        <div style={{ width: '80%' }}>
-                            <h2 style={{ textAlign: 'left', fontSize: '1.5rem', color: '#044590' }}>List of RAN KPI's</h2>
-                        </div>
-                        <div style={{ width: '20%' }}>
-                            <FormControl fullWidth>
-                                <InputLabel id="demo-simple-select-label">Filter By</InputLabel>
-                                <Select
-                                    labelId="demo-simple-select-label"
-                                    id="demo-simple-select"
-                                    value={kpi}
-                                    label="kpi list"
-                                    onChange={handleChange}
-                                >
-                                    <MenuItem value={'all'}>All</MenuItem>
-                                    <MenuItem value={'critical'}>Critical</MenuItem>
-                                    <MenuItem value={'average'}>Average</MenuItem>
-                                    <MenuItem value={'normal'}>Normal</MenuItem>
-                                </Select>
-                            </FormControl>
-                            {/* <FormControl variant="standard" fullWidth>
+                <Grid item xs={8}>
+                    <Card style={{ marginLeft: '1rem', height: '77.5vh' }}>
+                        <div style={{ display: 'flex', justifyContent: 'space-around', margin: '0.5rem' }}>
+                            <div style={{ width: '80%' }}>
+                                <h2 style={{ textAlign: 'left', fontSize: '1.5rem', color: '#044590' }}>List of RAN KPI's</h2>
+                            </div>
+                            <div style={{ width: '20%' }}>
+                                <FormControl fullWidth>
+                                    <InputLabel id="demo-simple-select-label">Filter By</InputLabel>
+                                    <Select
+                                        labelId="demo-simple-select-label"
+                                        id="demo-simple-select"
+                                        value={kpi}
+                                        label="kpi list"
+                                        onChange={handleChange}
+                                    >
+                                        <MenuItem value={'all'}>All</MenuItem>
+                                        <MenuItem value={'critical'}>Critical</MenuItem>
+                                        <MenuItem value={'average'}>Average</MenuItem>
+                                        <MenuItem value={'normal'}>Normal</MenuItem>
+                                    </Select>
+                                </FormControl>
+                                {/* <FormControl variant="standard" fullWidth>
                                 <InputLabel id="demo-simple-select-helper-label">Filter By</InputLabel>
                                 <Select
                                     labelId="demo-simple-select-helper-label"
@@ -89,57 +93,58 @@ function Index() {
                                     <MenuItem value={'normal'}>Normal</MenuItem>
                                 </Select>
                             </FormControl> */}
+                            </div>
                         </div>
-                    </div>
-                    <div
-                        style={{
-                            width: '100%',
-                            height: '1.5px',
-                            backgroundColor: '#6898ce',
-                            marginLeft: '10px',
-                            marginRight: '10px'
-                        }}
-                    />
-                    <div className="container" style={{ overflowY: 'scroll', height: '25vh', margin: '1rem' }}>
-                        {kpi == 'average' ? <Medium /> : kpi == 'normal' ? <Normal /> : kpi == 'critical' ? <Critical /> : <All />}
-                    </div>
+                        <div
+                            style={{
+                                width: '100%',
+                                height: '1.5px',
+                                backgroundColor: '#6898ce',
+                                marginLeft: '10px',
+                                marginRight: '10px'
+                            }}
+                        />
+                        <div className="container" style={{ overflowY: 'scroll', height: '25vh', margin: '1rem' }}>
+                            {kpi == 'average' ? <Medium /> : kpi == 'normal' ? <Normal /> : kpi == 'critical' ? <Critical /> : <All />}
+                        </div>
 
-                    <div style={{ display: 'flex', justifyContent: 'space-around', margin: '0.5rem' }}>
-                        <div style={{ width: '80%' }}>
-                            <h2 style={{ textAlign: 'left', fontSize: '1.5rem', color: '#044590' }}>Impacting KPI's</h2>
+                        <div style={{ display: 'flex', justifyContent: 'space-around', margin: '0.5rem' }}>
+                            <div style={{ width: '80%' }}>
+                                <h2 style={{ textAlign: 'left', fontSize: '1.5rem', color: '#044590' }}>Impacting KPI's</h2>
+                            </div>
+                            <div style={{ width: '20%' }}>
+                                <FormControl fullWidth>
+                                    <InputLabel id="demo-simple-select-label">Filter By</InputLabel>
+                                    <Select
+                                        labelId="demo-simple-select-label"
+                                        id="demo-simple-select"
+                                        value={kpi}
+                                        label="kpi list"
+                                        onChange={handleChange}
+                                    >
+                                        <MenuItem value={'all'}>All</MenuItem>
+                                        <MenuItem value={'Service Impacting'}>Service Impacting</MenuItem>
+                                        <MenuItem value={'Non-Service Impacting'}>Non-Service Impacting</MenuItem>
+                                    </Select>
+                                </FormControl>
+                            </div>
                         </div>
-                        <div style={{ width: '20%' }}>
-                            <FormControl fullWidth>
-                                <InputLabel id="demo-simple-select-label">Filter By</InputLabel>
-                                <Select
-                                    labelId="demo-simple-select-label"
-                                    id="demo-simple-select"
-                                    value={kpi}
-                                    label="kpi list"
-                                    onChange={handleChange}
-                                >
-                                    <MenuItem value={'all'}>All</MenuItem>
-                                    <MenuItem value={'Service Impacting'}>Service Impacting</MenuItem>
-                                    <MenuItem value={'Non-Service Impacting'}>Non-Service Impacting</MenuItem>
-                                </Select>
-                            </FormControl>
+                        <div
+                            style={{
+                                width: '100%',
+                                height: '1.5px',
+                                backgroundColor: '#6898ce',
+                                marginLeft: '10px',
+                                marginRight: '10px'
+                            }}
+                        />
+                        <div className="container" style={{ overflowY: 'scroll', height: '25vh', margin: '1rem' }}>
+                            {kpi == 'Service Impacting' ? <Nsi /> : kpi == 'Non-Service Impacting' ? <Service /> : <All />}
                         </div>
-                    </div>
-                    <div
-                        style={{
-                            width: '100%',
-                            height: '1.5px',
-                            backgroundColor: '#6898ce',
-                            marginLeft: '10px',
-                            marginRight: '10px'
-                        }}
-                    />
-                    <div className="container" style={{ overflowY: 'scroll', height: '25vh', margin: '1rem' }}>
-                        {kpi == 'Service Impacting' ? <Nsi /> : kpi == 'Non-Service Impacting' ? <Service /> : <All />}
-                    </div>
-                </Card>
+                    </Card>
+                </Grid>
             </Grid>
-        </Grid>
+        </>
     );
 }
 
