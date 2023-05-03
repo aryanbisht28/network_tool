@@ -25,7 +25,7 @@ const CardWrapper = styled(MainCard)(({ theme }) => ({
 }));
 // }
 
-const EarningCard = ({ isLoading, name, value }) => {
+const Assign = ({ isLoading, name, value }) => {
     const theme = useTheme();
 
     const [anchorEl, setAnchorEl] = useState(null);
@@ -110,8 +110,4 @@ const EarningCard = ({ isLoading, name, value }) => {
     );
 };
 
-EarningCard.propTypes = {
-    isLoading: PropTypes.bool
-};
-
-export default EarningCard;
+export default Assign;

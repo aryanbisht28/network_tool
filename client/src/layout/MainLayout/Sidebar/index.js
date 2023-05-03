@@ -43,11 +43,11 @@ const Sidebar = ({ drawerOpen, drawerToggle, window }) => {
                 ></img>
 
                 {/* <Box sx={{ position: 'relative', display: 'inline-block' }}> */}
-                <h2>
+                <h3>
                     {' '}
-                    Network Tool
+                    Performance & Analysis Tool
                     <hr style={{ width: '100%' }}></hr>
-                </h2>
+                </h3>
                 {/* <div
                         sx={{
                             position: 'absolute',

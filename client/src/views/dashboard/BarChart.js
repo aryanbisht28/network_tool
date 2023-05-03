@@ -10,28 +10,29 @@ ChartJS.register(CategoryScale, LinearScale, PointElement, LineElement, Title, T
 function BarChart() {
     const options = {
         responsive: true,
-        plugins: {
-            scales: {
-                x: {
-                    stacked: true,
-                    grid: {
-                        display: false
-                    }
-                },
-                y: {
-                    beginAtZero: true,
-                    stacked: true,
-                    grid: {
-                        display: false
-                    }
+        tension: 0.5,
+        pointStrokeColor: '#ffc8dd',
+        pointColor: '#ffc8dd',
+        strokeColor: '#ffc8dd',
+        scales: {
+            x: {
+                grid: {
+                    display: false
                 }
             },
+            y: {
+                grid: {
+                    display: false
+                }
+            }
+        },
+        plugins: {
             legend: {
                 position: 'top',
                 labels: {
                     color: '#000000',
                     font: {
-                        size: 10
+                        size: 8
                     },
                     align: 'center',
                     padding: 5,
@@ -55,30 +56,34 @@ function BarChart() {
             {
                 label: 'RAN',
                 data: [98, 90, 94, 90, 96, 98],
-                backgroundColor: '#8884d8'
+                backgroundColor: '#8884d8',
+                borderColor: '#8884d8'
             },
             {
                 label: 'Transmission',
                 data: [97, 90, 98, 96, 98, 99],
-                backgroundColor: '#82ca9d'
+                backgroundColor: '#82ca9d',
+                borderColor: '#82ca9d'
             },
             {
-                label: 'Core(CS)',
+                label: 'Core',
                 data: [99, 97, 98, 99, 99, 99],
-                backgroundColor: '#480ca8'
-            },
-            {
-                label: 'Core(PS)',
-                data: [98, 99, 98, 97, 98, 99],
-                backgroundColor: '#ffc8dd'
+                backgroundColor: '#480ca8',
+                borderColor: '#480ca8'
             }
+            // {
+            //     label: 'Core(PS)',
+            //     data: [98, 99, 98, 97, 98, 99],
+            //     backgroundColor: '#ffc8dd',
+            //     borderColor: '#ffc8dd'
+            // }
         ]
     };
 
     return (
         <Card
             style={{
-                height: '54vh',
+                height: '33vh',
                 position: 'relative',
                 marginBottom: '1%',
                 padding: '1%',
@@ -89,7 +94,9 @@ function BarChart() {
                 // alignItems: 'center'
             }}
         >
-            <h3 style={{ textAlign: 'left', fontSize: '1.5rem', color: '#044590', marginLeft: '1rem' }}>Monthly Network Performance</h3>
+            <h3 style={{ textAlign: 'left', fontSize: '1rem', color: '#044590', margin: '1rem 1rem 0 1rem', padding: '0' }}>
+                Monthly Network Performance
+            </h3>
             <div
                 style={{
                     width: '95%',
@@ -97,7 +104,7 @@ function BarChart() {
                     backgroundColor: '#6898ce',
                     marginTop: '10px',
                     marginBottom: '10px',
-                    marginLeft: '1rem'
+                    marginLeft: '0.5rem'
                 }}
             />
             <Line options={options} data={data} />

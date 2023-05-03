@@ -34,7 +34,7 @@ const CoreCard = ({ isLoading }) => {
             {isLoading ? (
                 <SkeletonEarningCard />
             ) : (
-                <CardWrapper border={false} content={false} style={{ width: '33vh' }}>
+                <CardWrapper border={false} content={false} style={{ width: '22vh' }}>
                     <Box sx={{ p: 1 }}>
                         <Grid sx={{ m: 1 }}>
                             <Typography
@@ -42,10 +42,10 @@ const CoreCard = ({ isLoading }) => {
                                     color: '#044590',
                                     fontWeight: '600',
                                     textAlign: 'center',
-                                    fontSize: '1.4em'
+                                    fontSize: '1em'
                                 }}
                             >
-                                Core(CS) Health
+                                Core
                             </Typography>
                         </Grid>
                         <div

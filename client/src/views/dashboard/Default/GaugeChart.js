@@ -18,8 +18,8 @@ import { styled } from '@mui/material/styles';
 
 const GaugesChart = () => {
     return (
-        <MainCard style={{ height: '49.2vh', display: 'flex', flexDirection: 'column', backgroundColor: '#fff', marginTop: '-1rem' }}>
-            <h3 style={{ textAlign: 'left', fontSize: '1.5rem', color: '#044590' }}>Network Health : 96%</h3>
+        <MainCard style={{ height: '45vh', display: 'flex', flexDirection: 'column', backgroundColor: '#fff', marginTop: '-1rem' }}>
+            <h3 style={{ textAlign: 'left', fontSize: '1.5rem', color: '#044590', margin: '0', padding: '0' }}>Network Health : 96%</h3>
             <div
                 style={{
                     width: '100%',

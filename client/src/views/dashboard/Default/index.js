@@ -8,274 +8,105 @@ import { gridSpacing } from 'store/constant';
 import axios from 'axios';
 import { Link } from 'react-router-dom';
 import 'react-responsive-carousel/lib/styles/carousel.min.css'; // requires a loader
-import { Carousel } from 'react-responsive-carousel';
 import RanCard from './cards/RanCard';
 import CoreCard from './cards/CoreCard';
 import TransCard from './cards/TransCard';
 import BarChart from '../BarChart';
-import CorepsCard from './cards/CorepsCard';
 import GaugeChart from './GaugeChart';
-import Cards from './cards/index';
 import './Scroll.css';
+import TopKpi from './TopKpi';
+import HorizontalChart from './HorizontalChart';
+import { Chart as ChartJS, CategoryScale, LinearScale, BarElement, Title, Tooltip, Legend } from 'chart.js';
+import { Bar } from 'react-chartjs-2';
+import Site from './data-card/Site';
+import Incident from './data-card/Incident';
+import Ticket from './data-card/Ticket';
+import Breached from './data-card/Breached.';
+import Header from 'layout/MainLayout/Header';
+
+ChartJS.register(CategoryScale, LinearScale, BarElement, Title, Tooltip, Legend);
 // ==============================|| DEFAULT DASHBOARD ||============================== //
 
 const Dashboard = () => {
+    const options = {
+        responsive: true,
+        plugins: {
+            legend: {
+                position: 'top'
+            },
+            title: {
+                display: true,
+                text: 'Chart.js Bar Chart'
+            }
+        }
+    };
+    const labels = ['January', 'February', 'March', 'April', 'May', 'June', 'July'];
+    const data = {
+        labels,
+        datasets: [
+            {
+                label: 'Dataset 1',
+                data: [98, 90, 94, 90, 96, 98],
+                backgroundColor: 'rgba(255, 99, 132, 0.5)'
+            }
+        ]
+    };
     return (
-        <Grid container spacing={gridSpacing} xs={12} direction="column">
-            <Grid container spacing={gridSpacing} xs={12} style={{ margin: '1rem', marginTop: '-0.7rem' }}>
-                <Grid xs={6} item style={{ marginLeft: '-0.6rem' }}>
-                    <GaugeChart />
+        <>
+            <Grid container spacing={gridSpacing} xs={12} style={{ marginTop: '-6rem' }}>
+                <div style={{ marginBottom: '1rem', width: '100%', marginTop: '1rem' }}>
+                    <Header title={'Dasboard'} subtitle={''} />
+                </div>
+                <Grid container spacing={gridSpacing} xs={12} style={{ marginLeft: '1rem' }}>
+                    <Grid item xs={2.4}>
+                        <Site />
+                    </Grid>
+                    <Grid item xs={2.4}>
+                        <Incident />
+                    </Grid>
+                    <Grid item xs={2.4}>
+                        <EarningCard />
+                    </Grid>
+                    <Grid item xs={2.4}>
+                        <Breached />
+                    </Grid>
+                    <Grid item xs={2.4}>
+                        <Ticket />
+                    </Grid>
                 </Grid>
-                <Grid xs={6} item>
-                    <BarChart />
-                </Grid>
-            </Grid>
-            <Grid container spacing={gridSpacing} xs={12} style={{ margin: '1rem', marginTop: '-1.5rem' }}>
-                <Grid xs={4} item style={{ marginLeft: '-0.6rem' }}>
-                    <Card
-                        style={{
-                            height: '23vh',
-                            position: 'relative',
-                            marginBottom: '1%',
-                            padding: '1%',
-                            display: 'flex',
-                            flexDirection: 'column'
-                            // justifyContent: 'center',
-                            // alignItems: 'center'
-                        }}
-                    >
-                        <h5 style={{ textAlign: 'left', fontSize: '1rem', color: '#044590', marginLeft: '1rem', marginTop: '10px' }}>
-                            Top Performing Circle/Regions
-                        </h5>
-                        <div
-                            style={{
-                                width: '100%',
-                                height: '2px',
-                                backgroundColor: '#6898ce',
-                                marginTop: '-10px',
-                                marginBottom: '10px'
-                            }}
-                        />
-                        <div className="container" style={{ height: '40vh', width: '100%', overflowY: 'scroll' }}>
-                            <div style={Kpi}>
-                                <h5>UP West</h5>
+                <Grid container spacing={gridSpacing} xs={12} style={{ marginLeft: '1rem' }}>
+                    <Grid item xs={3.5} style={{ marginTop: '1rem' }}>
+                        <Card style={{ background: '#fff', height: '69vh' }}>
+                            <BarChart />
+                            <TopKpi />
+                        </Card>
+                    </Grid>
+                    <Grid item xs={5.5} style={{ marginTop: '2rem' }}>
+                        <div style={{ display: 'flex', flexDirection: 'column' }}>
+                            <div>
+                                <GaugeChart />
                             </div>
-                            <div
-                                style={{
-                                    width: '100%',
-                                    height: '1.5px',
-                                    backgroundColor: '#cdcdcd',
-                                    marginTop: '10px',
-                                    marginBottom: '10px'
-                                }}
-                            />
-                            <div style={Kpi}>
-                                <h5>UP East</h5>
+                            <div style={{ display: 'flex' }}>
+                                <div style={{ marginTop: '0.5rem' }}>
+                                    <RanCard />
+                                </div>
+                                <div style={{ marginTop: '0.5rem', marginLeft: '0.7rem' }}>
+                                    <CoreCard />
+                                </div>
+                                <div style={{ marginTop: '0.5rem', marginLeft: '0.7rem' }}>
+                                    <TransCard />
+                                </div>
                             </div>
-
-                            <div
-                                style={{
-                                    width: '100%',
-                                    height: '1.5px',
-                                    backgroundColor: '#cdcdcd',
-                                    marginTop: '10px',
-                                    marginBottom: '10px'
-                                }}
-                            />
-                            <div style={Kpi}>
-                                <h5>Tamil Nadu</h5>
-                            </div>
-
-                            <div
-                                style={{
-                                    width: '100%',
-                                    height: '1.5px',
-                                    backgroundColor: '#cdcdcd',
-                                    marginTop: '10px',
-                                    marginBottom: '10px'
-                                }}
-                            />
-                            <div style={Kpi}>
-                                <h5>Gurgaon</h5>
-                            </div>
-                            <div
-                                style={{
-                                    width: '100%',
-                                    height: '1.5px',
-                                    backgroundColor: '#cdcdcd',
-                                    marginTop: '10px',
-                                    marginBottom: '10px'
-                                }}
-                            />
-                            <div style={Kpi}>
-                                <h5>Delhi</h5>
-                            </div>
-                            <div
-                                style={{
-                                    width: '100%',
-                                    height: '1.5px',
-                                    backgroundColor: '#cdcdcd',
-                                    marginTop: '10px',
-                                    marginBottom: '10px'
-                                }}
-                            />
-                            <div style={Kpi}>
-                                <h5>Himachal Pradesh</h5>
-                            </div>
-                            <div
-                                style={{
-                                    width: '100%',
-                                    height: '1.5px',
-                                    backgroundColor: '#cdcdcd',
-                                    marginTop: '10px',
-                                    marginBottom: '10px'
-                                }}
-                            />
                         </div>
-                    </Card>
-                </Grid>
-                <Grid xs={8} item>
-                    <Card
-                        style={{
-                            height: '23vh',
-                            position: 'relative',
-                            marginBottom: '1%',
-                            padding: '1%',
-                            display: 'flex',
-                            flexDirection: 'column'
-                            // justifyContent: 'center',
-                            // alignItems: 'center'
-                        }}
-                    >
-                        <h5 style={{ textAlign: 'left', fontSize: '1rem', color: '#044590', marginLeft: '1rem', marginTop: '10px' }}>
-                            Top Performing KPI's
-                        </h5>
-                        <div
-                            style={{
-                                width: '100%',
-                                height: '2px',
-                                backgroundColor: '#6898ce',
-                                marginTop: '-10px',
-                                marginBottom: '10px'
-                            }}
-                        />
-                        <div className="container" style={{ height: '40vh', width: '100%', overflowY: 'scroll' }}>
-                            <div style={Kpi}>
-                                <h5>Radio resource control setup success rate</h5>
-                            </div>
-                            <div
-                                style={{
-                                    width: '100%',
-                                    height: '1.5px',
-                                    backgroundColor: '#cdcdcd',
-                                    marginTop: '10px',
-                                    marginBottom: '10px'
-                                }}
-                            />
-                            <div style={Kpi}>
-                                <h5>Attach success rate</h5>
-                            </div>
-                            <div
-                                style={{
-                                    width: '100%',
-                                    height: '1.5px',
-                                    backgroundColor: '#cdcdcd',
-                                    marginTop: '10px',
-                                    marginBottom: '10px'
-                                }}
-                            />
-                            <div style={Kpi}>
-                                <h5>RAN Connection Setup Success Rate</h5>
-                            </div>
-                            <div
-                                style={{
-                                    width: '100%',
-                                    height: '1.5px',
-                                    backgroundColor: '#cdcdcd',
-                                    marginTop: '10px',
-                                    marginBottom: '10px'
-                                }}
-                            />
-                            <div style={Kpi}>
-                                <h5>Tracking Area Update Success Rate</h5>
-                            </div>
-                            <div
-                                style={{
-                                    width: '100%',
-                                    height: '1.5px',
-                                    backgroundColor: '#cdcdcd',
-                                    marginTop: '10px',
-                                    marginBottom: '10px'
-                                }}
-                            />
-                            <div style={Kpi}>
-                                <h5>Packet Retransmission Rate</h5>
-                            </div>
-                            <div
-                                style={{
-                                    width: '100%',
-                                    height: '1.5px',
-                                    backgroundColor: '#cdcdcd',
-                                    marginTop: '10px',
-                                    marginBottom: '10px'
-                                }}
-                            />
-                            <div style={Kpi}>
-                                <h5>Network Uptime</h5>
-                            </div>
-                            <div
-                                style={{
-                                    width: '100%',
-                                    height: '1.5px',
-                                    backgroundColor: '#cdcdcd',
-                                    marginTop: '10px',
-                                    marginBottom: '10px'
-                                }}
-                            />
-                            <div style={Kpi}>
-                                <h5>Mean Time Between Failures</h5>
-                            </div>
-                            <div
-                                style={{
-                                    width: '100%',
-                                    height: '1.5px',
-                                    backgroundColor: '#cdcdcd',
-                                    marginTop: '10px',
-                                    marginBottom: '10px'
-                                }}
-                            />
-                            <div style={Kpi}>
-                                <h5>PS Data Session Success Rate</h5>
-                            </div>
-                            <div
-                                style={{
-                                    width: '100%',
-                                    height: '1.5px',
-                                    backgroundColor: '#cdcdcd',
-                                    marginTop: '10px',
-                                    marginBottom: '10px'
-                                }}
-                            />
-                            <div style={Kpi}>
-                                <h5>Service Accessibility </h5>
-                            </div>
-                            <div
-                                style={{
-                                    width: '100%',
-                                    height: '1.5px',
-                                    backgroundColor: '#cdcdcd',
-                                    marginTop: '10px',
-                                    marginBottom: '10px'
-                                }}
-                            />
-                        </div>
-                    </Card>
+                    </Grid>
+                    <Grid item xs={3} style={{ marginTop: '1rem' }}>
+                        <Card style={{ background: '#fff', height: '69vh' }}>
+                            <HorizontalChart />
+                        </Card>
+                    </Grid>
                 </Grid>
             </Grid>
-            <Grid style={{ margin: '1rem', marginTop: '-0.7rem' }}>
-                <Cards />
-            </Grid>
-        </Grid>
+        </>
     );
 };
 

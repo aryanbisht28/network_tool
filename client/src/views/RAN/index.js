@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Grid } from '@mui/material';
+import { gridSpacing } from 'store/constant';
 import Card from '@mui/material/Card';
 import PieCharts from 'views/RAN/PieChart';
 import GaugeChart from 'views/RAN/GaugeChart';
@@ -14,6 +15,12 @@ import All from './Table/All';
 import Nsi from './non_service_impacting/Nsi.js';
 import Service from './Sevice';
 import './Table/Style/Scroll.css';
+import Site from './data-card/Site';
+import Incident from './data-card/Incident';
+import Ticket from './data-card/Ticket';
+import Breached from './data-card/Breached.';
+import Header from 'layout/MainLayout/Header';
+import Assign from './data-card/Assign';
 function Index() {
     const [kpi, setKpi] = useState('all');
 
@@ -22,13 +29,24 @@ function Index() {
     };
     return (
         <Grid container xs={12}>
-            <Grid item xs={4}>
-                {/* <Grid item>
-                    <GaugeChart />
+            <Grid container spacing={gridSpacing} xs={12}>
+                <Grid item xs={2.4}>
+                    <Site />
                 </Grid>
-                <Grid item style={{ marginTop: '1rem' }}>
-                    <PieCharts />
-                </Grid> */}
+                <Grid item xs={2.4}>
+                    <Incident />
+                </Grid>
+                <Grid item xs={2.4}>
+                    <Assign />
+                </Grid>
+                <Grid item xs={2.4}>
+                    <Breached />
+                </Grid>
+                <Grid item xs={2.4}>
+                    <Ticket />
+                </Grid>
+            </Grid>
+            <Grid item xs={4}>
                 <Card>
                     <GaugeChart />
                     <PieCharts />
