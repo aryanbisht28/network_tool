@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Grid } from '@mui/material';
+import { gridSpacing } from 'store/constant';
 import Card from '@mui/material/Card';
 import PieCharts from 'views/Transmission/PieChart';
 import GaugeChart from 'views/Transmission/GaugeChart';
@@ -13,6 +14,13 @@ import Critical from './Table/Critical';
 import All from './Table/All';
 import './Table/Style/Scroll.css';
 import Header from 'layout/MainLayout/Header';
+import Site from './data-card/Site';
+import Incident from './data-card/Incident';
+import Ticket from './data-card/Ticket';
+// import Breached from './data-card/Breached';
+import Breached from './data-card/Breached.';
+import Assign from './data-card/Assign';
+import BarChart from './BarChart';
 
 function Index() {
     const [kpi, setKpi] = useState('all');
@@ -25,7 +33,7 @@ function Index() {
             <div style={{ marginBottom: '1rem', width: '100%', marginTop: '-90px' }}>
                 <Header title={'Transmission'} subtitle={''} />
             </div>
-            <Grid container xs={12}>
+            {/* <Grid container xs={12}>
                 <Grid item xs={4}>
                     {/* <Grid item>
                     <GaugeChart />
@@ -33,12 +41,12 @@ function Index() {
                 <Grid item style={{ marginTop: '1rem' }}>
                     <PieCharts />
                 </Grid> */}
-                    <Card>
+            {/* <Card style={{ background: '#fff' }}>
                         <GaugeChart />
                         <PieCharts />
                     </Card>
-                </Grid>
-                <Grid item xs={8}>
+                </Grid> */}
+            {/* <Grid item xs={8}>
                     <Card style={{ marginLeft: '1rem', height: '77.5vh' }}>
                         <div style={{ display: 'flex', justifyContent: 'space-around', margin: '0.5rem' }}>
                             <div style={{ width: '80%' }}>
@@ -110,6 +118,129 @@ function Index() {
                             </div>
                         </div>
                     </Card>
+                </Grid> */}
+            {/* </Grid> */}
+            <Grid container xs={12} style={{ marginTop: '-0.5rem' }}>
+                <Grid container spacing={gridSpacing} xs={12}>
+                    <Grid item xs={2.4}>
+                        <Site />
+                    </Grid>
+                    <Grid item xs={2.4}>
+                        <Incident />
+                    </Grid>
+                    <Grid item xs={2.4}>
+                        <Assign />
+                    </Grid>
+                    <Grid item xs={2.4}>
+                        <Breached />
+                    </Grid>
+                    <Grid item xs={2.4}>
+                        <Ticket />
+                    </Grid>
+                </Grid>
+                <Grid container spacing={gridSpacing} xs={12} style={{ marginTop: '-1rem' }}>
+                    <Grid item xs={3.5}>
+                        <Card style={{ background: '#fff', height: '74vh' }}>
+                            <GaugeChart />
+                            <PieCharts />
+                        </Card>
+                    </Grid>
+                    <Grid item xs={4}>
+                        <div style={{ display: 'flex', flexDirection: 'column' }}>
+                            <div>
+                                <Card style={{ background: '#fff' }}>
+                                    <BarChart />
+                                </Card>
+                            </div>
+                            <div style={{ marginTop: '0.5rem', width: '100%' }}>
+                                <Card style={{ background: '#fff' }}>
+                                    <div style={{ display: 'flex', justifyContent: 'space-around', margin: '0.5rem' }}>
+                                        <div style={{ width: '80%' }}>
+                                            <h2 style={{ textAlign: 'left', fontSize: '1rem', color: '#044590' }}>Impacting KPI's</h2>
+                                        </div>
+                                        <div style={{ width: '20%' }}>
+                                            <FormControl fullWidth>
+                                                <InputLabel id="demo-simple-select-label">Filter By</InputLabel>
+                                                <Select
+                                                    labelId="demo-simple-select-label"
+                                                    id="demo-simple-select"
+                                                    value={kpi}
+                                                    label="kpi list"
+                                                    onChange={handleChange}
+                                                >
+                                                    <MenuItem value={'all'}>All</MenuItem>
+                                                    <MenuItem value={'Service Impacting'}>Service Impacting</MenuItem>
+                                                    <MenuItem value={'Non-Service Impacting'}>Non-Service Impacting</MenuItem>
+                                                </Select>
+                                            </FormControl>
+                                        </div>
+                                    </div>
+                                    <div
+                                        style={{
+                                            width: '100%',
+                                            height: '1.5px',
+                                            backgroundColor: '#6898ce',
+                                            marginLeft: '10px',
+                                            marginRight: '10px'
+                                        }}
+                                    />
+                                    <div className="container" style={{ overflowY: 'scroll', height: '23.5vh', margin: '1rem' }}>
+                                        {kpi == 'Service Impacting' ? <Nsi /> : kpi == 'Non-Service Impacting' ? <Service /> : <All />}
+                                    </div>
+                                </Card>
+                            </div>
+                        </div>
+                    </Grid>
+                    <Grid item xs={4.5}>
+                        <div style={{ width: '100%' }}>
+                            <Card style={{ backgroundColor: '#fff' }}>
+                                <div style={{ display: 'flex', justifyContent: 'space-around', margin: '0.5rem' }}>
+                                    <div style={{ width: '80%' }}>
+                                        <h2 style={{ textAlign: 'left', fontSize: '1rem', color: '#044590' }}>
+                                            List of Transmission KPI's
+                                        </h2>
+                                    </div>
+                                    <div style={{ width: '20%' }}>
+                                        <FormControl fullWidth>
+                                            <InputLabel id="demo-simple-select-label">Filter By</InputLabel>
+                                            <Select
+                                                labelId="demo-simple-select-label"
+                                                id="demo-simple-select"
+                                                value={kpi}
+                                                label="kpi list"
+                                                onChange={handleChange}
+                                            >
+                                                <MenuItem value={'all'}>All</MenuItem>
+                                                <MenuItem value={'critical'}>Critical</MenuItem>
+                                                <MenuItem value={'average'}>Average</MenuItem>
+                                                <MenuItem value={'normal'}>Normal</MenuItem>
+                                            </Select>
+                                        </FormControl>
+                                    </div>
+                                </div>
+                                <div
+                                    style={{
+                                        width: '100%',
+                                        height: '1.5px',
+                                        backgroundColor: '#6898ce',
+                                        marginLeft: '10px',
+                                        marginRight: '10px'
+                                    }}
+                                />
+                                <div className="container" style={{ overflowY: 'scroll', height: '58vh', margin: '1rem' }}>
+                                    {kpi == 'average' ? (
+                                        <Medium />
+                                    ) : kpi == 'normal' ? (
+                                        <Normal />
+                                    ) : kpi == 'critical' ? (
+                                        <Critical />
+                                    ) : (
+                                        <All />
+                                    )}
+                                </div>
+                            </Card>
+                        </div>
+                    </Grid>
                 </Grid>
             </Grid>
         </>

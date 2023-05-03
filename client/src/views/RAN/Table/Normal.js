@@ -56,9 +56,7 @@ function Normal() {
                 <div style={Kpi}>
                     <h5>session establishment success rate</h5>
                 </div>
-                <div style={critical}>
-                    <h5>Normal</h5>
-                </div>
+                <div></div>
                 <div style={btn}>
                     <Button variant="text" style={{ marginTop: '0.5rem' }} onClick={handleOpen}>
                         View
@@ -244,9 +242,7 @@ function Normal() {
                 <div style={Kpi}>
                     <h5>call setup time</h5>
                 </div>
-                <div style={critical}>
-                    <h5>Normal</h5>
-                </div>
+                <div></div>
                 <div style={btn}>
                     <Button variant="text" style={{ marginTop: '0.5rem' }}>
                         View
@@ -266,9 +262,7 @@ function Normal() {
                 <div style={Kpi}>
                     <h5>data session retention rate</h5>
                 </div>
-                <div style={critical}>
-                    <h5>Normal</h5>
-                </div>
+                <div></div>
                 <div style={btn}>
                     <Button variant="text" style={{ marginTop: '0.5rem' }}>
                         View
@@ -288,9 +282,7 @@ function Normal() {
                 <div style={Kpi}>
                     <h5>Latency</h5>
                 </div>
-                <div style={critical}>
-                    <h5>Normal</h5>
-                </div>
+                <div></div>
                 <div style={btn}>
                     <Button variant="text" style={{ marginTop: '0.5rem' }}>
                         View
@@ -310,9 +302,7 @@ function Normal() {
                 <div style={Kpi}>
                     <h5>Throughput</h5>
                 </div>
-                <div style={critical}>
-                    <h5>Normal</h5>
-                </div>
+                <div></div>
                 <div style={btn}>
                     <Button variant="text" style={{ marginTop: '0.5rem' }}>
                         View
@@ -332,9 +322,7 @@ function Normal() {
                 <div style={Kpi}>
                     <h5>Handover Success Rate</h5>
                 </div>
-                <div style={critical}>
-                    <h5>Normal</h5>
-                </div>
+                <div></div>
                 <div style={btn}>
                     <Button variant="text" style={{ marginTop: '0.5rem' }}>
                         View
@@ -354,9 +342,7 @@ function Normal() {
                 <div style={Kpi}>
                     <h5>Radio Link Failure Rate</h5>
                 </div>
-                <div style={critical}>
-                    <h5>Normal</h5>
-                </div>
+                <div></div>
                 <div style={btn}>
                     <Button variant="text" style={{ marginTop: '0.5rem' }}>
                         View
@@ -376,9 +362,7 @@ function Normal() {
                 <div style={Kpi}>
                     <h5>DL and UL Packet Error Rate</h5>
                 </div>
-                <div style={critical}>
-                    <h5>Normal</h5>
-                </div>
+                <div></div>
                 <div style={btn}>
                     <Button variant="text" style={{ marginTop: '0.5rem' }}>
                         View
@@ -398,9 +382,7 @@ function Normal() {
                 <div style={Kpi}>
                     <h5>HARQ Retransmission Rate</h5>
                 </div>
-                <div style={critical}>
-                    <h5>Normal</h5>
-                </div>
+                <div></div>
                 <div style={btn}>
                     <Button variant="text" style={{ marginTop: '0.5rem' }}>
                         View
@@ -420,9 +402,7 @@ function Normal() {
                 <div style={Kpi}>
                     <h5>RLC Retransmission Rate</h5>
                 </div>
-                <div style={critical}>
-                    <h5>Normal</h5>
-                </div>
+                <div></div>
                 <div style={btn}>
                     <Button variant="text" style={{ marginTop: '0.5rem' }}>
                         View
@@ -442,9 +422,7 @@ function Normal() {
                 <div style={Kpi}>
                     <h5>Signalling integrity</h5>
                 </div>
-                <div style={critical}>
-                    <h5>Normal</h5>
-                </div>
+                <div></div>
                 <div style={btn}>
                     <Button variant="text" style={{ marginTop: '0.5rem' }}>
                         View
@@ -464,9 +442,7 @@ function Normal() {
                 <div style={Kpi}>
                     <h5>Authentication integrity</h5>
                 </div>
-                <div style={critical}>
-                    <h5>Normal</h5>
-                </div>
+                <div></div>
                 <div style={btn}>
                     <Button variant="text" style={{ marginTop: '0.5rem' }}>
                         View
@@ -486,9 +462,7 @@ function Normal() {
                 <div style={Kpi}>
                     <h5>Interference level</h5>
                 </div>
-                <div style={critical}>
-                    <h5>Normal</h5>
-                </div>
+                <div></div>
                 <div style={btn}>
                     <Button variant="text" style={{ marginTop: '0.5rem' }}>
                         View
@@ -508,9 +482,7 @@ function Normal() {
                 <div style={Kpi}>
                     <h5>Bit Error Rate</h5>
                 </div>
-                <div style={critical}>
-                    <h5>Normal</h5>
-                </div>
+                <div></div>
                 <div style={btn}>
                     <Button variant="text" style={{ marginTop: '0.5rem' }}>
                         View
@@ -531,9 +503,7 @@ function Normal() {
                 <div style={Kpi}>
                     <h5>RAN Cell Reselection Success Rate</h5>
                 </div>
-                <div style={critical}>
-                    <h5>Normal</h5>
-                </div>
+                <div></div>
                 <div style={btn}>
                     <Button variant="text" style={{ marginTop: '0.5rem' }}>
                         View
@@ -553,9 +523,7 @@ function Normal() {
                 <div style={Kpi}>
                     <h5>Network availability</h5>
                 </div>
-                <div style={critical}>
-                    <h5>Normal</h5>
-                </div>
+                <div></div>
                 <div style={btn}>
                     <Button variant="text" style={{ marginTop: '0.5rem' }}>
                         View
@@ -575,9 +543,7 @@ function Normal() {
                 <div style={Kpi}>
                     <h5>eNodeB availability</h5>
                 </div>
-                <div style={critical}>
-                    <h5>Normal</h5>
-                </div>
+                <div></div>
                 <div style={btn}>
                     <Button variant="text" style={{ marginTop: '0.5rem' }}>
                         View
@@ -597,9 +563,7 @@ function Normal() {
                 <div style={Kpi}>
                     <h5>Cell Availability</h5>
                 </div>
-                <div style={critical}>
-                    <h5>Normal</h5>
-                </div>
+                <div></div>
                 <div style={btn}>
                     <Button variant="text" style={{ marginTop: '0.5rem' }}>
                         View
@@ -619,9 +583,7 @@ function Normal() {
                 <div style={Kpi}>
                     <h5>System Availability</h5>
                 </div>
-                <div style={critical}>
-                    <h5>Normal</h5>
-                </div>
+                <div></div>
                 <div style={btn}>
                     <Button variant="text" style={{ marginTop: '0.5rem' }}>
                         View
@@ -641,9 +603,7 @@ function Normal() {
                 <div style={Kpi}>
                     <h5>Mean Time Between Failures</h5>
                 </div>
-                <div style={critical}>
-                    <h5>Normal</h5>
-                </div>
+                <div></div>
                 <div style={btn}>
                     <Button variant="text" style={{ marginTop: '0.5rem' }}>
                         View
@@ -663,9 +623,7 @@ function Normal() {
                 <div style={Kpi}>
                     <h5>Mean Time to Repair</h5>
                 </div>
-                <div style={critical}>
-                    <h5>Normal</h5>
-                </div>
+                <div></div>
                 <div style={btn}>
                     <Button variant="text" style={{ marginTop: '0.5rem' }}>
                         View
@@ -685,9 +643,7 @@ function Normal() {
                 <div style={Kpi}>
                     <h5>RAN Site Availability</h5>
                 </div>
-                <div style={critical}>
-                    <h5>Normal</h5>
-                </div>
+                <div></div>
                 <div style={btn}>
                     <Button variant="text" style={{ marginTop: '0.5rem' }}>
                         View
@@ -707,9 +663,7 @@ function Normal() {
                 <div style={Kpi}>
                     <h5>RAN Site Outage Duration</h5>
                 </div>
-                <div style={critical}>
-                    <h5>Normal</h5>
-                </div>
+                <div></div>
                 <div style={btn}>
                     <Button variant="text" style={{ marginTop: '0.5rem' }}>
                         View
@@ -729,9 +683,7 @@ function Normal() {
                 <div style={Kpi}>
                     <h5>Data integrity</h5>
                 </div>
-                <div style={critical}>
-                    <h5>Normal</h5>
-                </div>
+                <div></div>
                 <div style={btn}>
                     <Button variant="text" style={{ marginTop: '0.5rem' }}>
                         View
@@ -751,9 +703,7 @@ function Normal() {
                 <div style={Kpi}>
                     <h5>PDCP Protocol Data Unit Loss Rate</h5>
                 </div>
-                <div style={critical}>
-                    <h5>Normal</h5>
-                </div>
+                <div></div>
                 <div style={btn}>
                     <Button variant="text" style={{ marginTop: '0.5rem' }}>
                         View

@@ -8,9 +8,18 @@ import { Box, Grid, Typography } from '@mui/material';
 function GaugesChart() {
     const value = 0.98;
     return (
-        <Card style={{ display: 'flex', flexDirection: 'column', alignItem: 'center', justifyContent: 'center', height: '35vh' }}>
+        <Card
+            style={{
+                display: 'flex',
+                flexDirection: 'column',
+                alignItem: 'center',
+                justifyContent: 'center',
+                height: '35vh',
+                background: '#fff'
+            }}
+        >
             <Grid style={{ marginLeft: '1rem', marginRight: '1rem', marginTop: '-1.5rem' }}>
-                <h3 style={{ textAlign: 'left', fontSize: '1.5rem', color: '#044590' }}>Core(CS) Network Health</h3>
+                <h3 style={{ textAlign: 'left', fontSize: '1.5rem', color: '#044590' }}>Core(CS) Performance</h3>
                 <div
                     style={{
                         width: '100%',

@@ -56,7 +56,7 @@ function Normal() {
                 <div style={Kpi}>
                     <h5>PS Data Session Success Rate</h5>
                 </div>
-                <div style={critical}>Normal</div>
+                <div></div>
                 <div style={btn}>
                     <Button variant="text" style={{ marginTop: '0.5rem' }} onClick={handleOpen}>
                         View
@@ -182,7 +182,7 @@ function Normal() {
                 <div style={Kpi}>
                     <h5>Service Accessibility </h5>
                 </div>
-                <div style={critical}>Normal</div>
+                <div></div>
                 <div style={btn}>
                     <Button variant="text" style={{ marginTop: '0.5rem' }}>
                         View
@@ -368,7 +368,7 @@ function Normal() {
                 <div style={Kpi}>
                     <h5>Service Unavailability</h5>
                 </div>
-                <div style={critical}>Normal</div>
+                <div></div>
                 <div style={btn}>
                     <Button variant="text" style={{ marginTop: '0.5rem' }}>
                         View
@@ -388,7 +388,7 @@ function Normal() {
                 <div style={Kpi}>
                     <h5>Packet Delivery Ratio</h5>
                 </div>
-                <div style={critical}>Normal</div>
+                <div></div>
                 <div style={btn}>
                     <Button variant="text" style={{ marginTop: '0.5rem' }}>
                         View
@@ -408,7 +408,7 @@ function Normal() {
                 <div style={Kpi}>
                     <h5>Service Request Failure Rate</h5>
                 </div>
-                <div style={critical}>Normal</div>
+                <div></div>
                 <div style={btn}>
                     <Button variant="text" style={{ marginTop: '0.5rem' }}>
                         View
@@ -428,7 +428,7 @@ function Normal() {
                 <div style={Kpi}>
                     <h5>Session Setup Success Rate</h5>
                 </div>
-                <div style={critical}>Normal</div>
+                <div></div>
                 <div style={btn}>
                     <Button variant="text" style={{ marginTop: '0.5rem' }}>
                         View
@@ -448,7 +448,7 @@ function Normal() {
                 <div style={Kpi}>
                     <h5>Mean Time To Repair</h5>
                 </div>
-                <div style={critical}>Normal</div>
+                <div></div>
                 <div style={btn}>
                     <Button variant="text" style={{ marginTop: '0.5rem' }}>
                         View
@@ -468,7 +468,7 @@ function Normal() {
                 <div style={Kpi}>
                     <h5>Service Outage Duration</h5>
                 </div>
-                <div style={critical}>Normal</div>
+                <div></div>
                 <div style={btn}>
                     <Button variant="text" style={{ marginTop: '0.5rem' }}>
                         View
@@ -488,7 +488,7 @@ function Normal() {
                 <div style={Kpi}>
                     <h5>Service Restoration Time</h5>
                 </div>
-                <div style={critical}>Normal</div>
+                <div></div>
                 <div style={btn}>
                     <Button variant="text" style={{ marginTop: '0.5rem' }}>
                         View
@@ -508,7 +508,7 @@ function Normal() {
                 <div style={Kpi}>
                     <h5>Throughput </h5>
                 </div>
-                <div style={critical}>Normal</div>
+                <div></div>
                 <div style={btn}>
                     <Button variant="text" style={{ marginTop: '0.5rem' }}>
                         View
@@ -528,7 +528,7 @@ function Normal() {
                 <div style={Kpi}>
                     <h5>Average User Throughput </h5>
                 </div>
-                <div style={critical}>Normal</div>
+                <div></div>
                 <div style={btn}>
                     <Button variant="text" style={{ marginTop: '0.5rem' }}>
                         View
@@ -548,7 +548,7 @@ function Normal() {
                 <div style={Kpi}>
                     <h5>Tracking area update delay</h5>
                 </div>
-                <div style={critical}>Normal</div>
+                <div></div>
                 <div style={btn}>
                     <Button variant="text" style={{ marginTop: '0.5rem' }}>
                         View

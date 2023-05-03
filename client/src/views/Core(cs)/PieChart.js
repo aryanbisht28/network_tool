@@ -27,7 +27,8 @@ function PieCharts() {
             style={{
                 height: '42.5vh',
                 display: 'flex',
-                flexDirection: 'column'
+                flexDirection: 'column',
+                background: '#fff'
             }}
         >
             <div style={{ marginLeft: '1rem', marginRight: '1rem', marginTop: '-1.5rem' }}>

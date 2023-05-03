@@ -87,9 +87,7 @@ function Nsi() {
                 <div style={Kpi}>
                     <h5>Radio resource control setup success rate</h5>
                 </div>
-                <div style={critical}>
-                    <h5>Critical</h5>
-                </div>
+
                 <div style={btn}>
                     <Button variant="text" style={{ marginTop: '0.5rem' }} onClick={handleOpen}>
                         View
@@ -187,9 +185,7 @@ function Nsi() {
                 <div style={Kpi}>
                     <h5>Attach success rate</h5>
                 </div>
-                <div style={critical}>
-                    <h5>Critical</h5>
-                </div>
+
                 <div style={btn}>
                     <Button variant="text" style={{ marginTop: '0.5rem' }} onClick={handleOpen1}>
                         View
@@ -280,9 +276,7 @@ function Nsi() {
                 <div style={Kpi}>
                     <h5>RAN Connection Setup Success Rate</h5>
                 </div>
-                <div style={critical}>
-                    <h5>Critical</h5>
-                </div>
+
                 <div style={btn}>
                     <Button variant="text" style={{ marginTop: '0.5rem' }}>
                         View
@@ -303,9 +297,7 @@ function Nsi() {
                 <div style={Kpi}>
                     <h5>Tracking Area Update Success Rate</h5>
                 </div>
-                <div style={Average}>
-                    <h5>Average</h5>
-                </div>
+
                 <div style={btn}>
                     <Button variant="text" style={{ marginTop: '0.5rem' }}>
                         View
@@ -325,9 +317,7 @@ function Nsi() {
                 <div style={Kpi}>
                     <h5>RAN Access Failure Rate</h5>
                 </div>
-                <div style={Average}>
-                    <h5>Average</h5>
-                </div>
+
                 <div style={btn}>
                     <Button variant="text" style={{ marginTop: '0.5rem' }}>
                         View

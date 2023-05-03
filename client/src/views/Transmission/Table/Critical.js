@@ -85,9 +85,7 @@ function Critical() {
                 <div style={Kpi}>
                     <h5>Mean Opinion Score (MOS)</h5>
                 </div>
-                <div style={critical}>
-                    <h5>Critical</h5>
-                </div>
+                <div></div>
                 <div style={btn}>
                     <Button variant="text" style={{ marginTop: '0.5rem' }}>
                         {/* onClick={handleClose} */}
@@ -274,9 +272,7 @@ function Critical() {
                 <div style={Kpi}>
                     <h5>Packet Discard Rate (PDR)</h5>
                 </div>
-                <div style={critical}>
-                    <h5>Critical</h5>
-                </div>
+                <div></div>
                 <div style={btn}>
                     <Button variant="text" style={{ marginTop: '0.5rem' }}>
                         {/* onClick{handleClose1} */}

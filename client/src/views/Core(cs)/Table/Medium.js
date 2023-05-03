@@ -45,9 +45,7 @@ function Medium() {
                 <div style={Kpi}>
                     <h5>VoLTE Paging Success Rate</h5>
                 </div>
-                <div style={critical}>
-                    <h5>Average</h5>
-                </div>
+                <div></div>
                 <div style={btn}>
                     <Button variant="text" style={{ marginTop: '0.5rem' }}>
                         View
@@ -74,9 +72,7 @@ function Medium() {
                 <div style={Kpi}>
                     <h5>VoLTE Paging Delay</h5>
                 </div>
-                <div style={critical}>
-                    <h5>Average</h5>
-                </div>
+                <div></div>
                 <div style={btn}>
                     <Button variant="text" style={{ marginTop: '0.5rem' }}>
                         View
@@ -103,9 +99,7 @@ function Medium() {
                 <div style={Kpi}>
                     <h5>VoLTE Call Setup Failure Rate</h5>
                 </div>
-                <div style={critical}>
-                    <h5>Average</h5>
-                </div>
+                <div></div>
                 <div style={btn}>
                     <Button variant="text" style={{ marginTop: '0.5rem' }}>
                         View
@@ -132,9 +126,7 @@ function Medium() {
                 <div style={Kpi}>
                     <h5>authentication integrity</h5>
                 </div>
-                <div style={critical}>
-                    <h5>Average</h5>
-                </div>
+                <div></div>
                 <div style={btn}>
                     <Button variant="text" style={{ marginTop: '0.5rem' }}>
                         View

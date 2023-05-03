@@ -38,9 +38,7 @@ function Medium() {
                 <div style={Kpi}>
                     <h5>Tracking Area Update Success Rate</h5>
                 </div>
-                <div style={critical}>
-                    <h5>Average</h5>
-                </div>
+                <div></div>
                 <div style={btn}>
                     <Button variant="text" style={{ marginTop: '0.5rem' }}>
                         View
@@ -60,9 +58,7 @@ function Medium() {
                 <div style={Kpi}>
                     <h5>RAN Access Failure Rate</h5>
                 </div>
-                <div style={critical}>
-                    <h5>Average</h5>
-                </div>
+                <div></div>
                 <div style={btn}>
                     <Button variant="text" style={{ marginTop: '0.5rem' }}>
                         View
@@ -82,9 +78,7 @@ function Medium() {
                 <div style={Kpi}>
                     <h5>Call Setup Success Rate</h5>
                 </div>
-                <div style={critical}>
-                    <h5>Average</h5>
-                </div>
+                <div></div>
 
                 <div style={btn}>
                     <Button variant="text" style={{ marginTop: '0.5rem' }}>
@@ -105,9 +99,7 @@ function Medium() {
                 <div style={Kpi}>
                     <h5>Call Setup Success Rate</h5>
                 </div>
-                <div style={critical}>
-                    <h5>Average</h5>
-                </div>
+                <div></div>
                 <div style={btn}>
                     <Button variant="text" style={{ marginTop: '0.5rem' }}>
                         View

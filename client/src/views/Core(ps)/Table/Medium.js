@@ -38,9 +38,7 @@ function Medium() {
                 <div style={Kpi}>
                     <h5>Packet Discard Ratio </h5>
                 </div>
-                <div style={critical}>
-                    <h5>Average</h5>
-                </div>
+                <div></div>
                 <div style={btn}>
                     <Button variant="text" style={{ marginTop: '0.5rem' }}>
                         View
@@ -60,9 +58,7 @@ function Medium() {
                 <div style={Kpi}>
                     <h5>Data Session Retention Rate</h5>
                 </div>
-                <div style={critical}>
-                    <h5>Average</h5>
-                </div>
+                <div></div>
                 <div style={btn}>
                     <Button variant="text" style={{ marginTop: '0.5rem' }}>
                         View
@@ -82,9 +78,7 @@ function Medium() {
                 <div style={Kpi}>
                     <h5>Handover Success Rate </h5>
                 </div>
-                <div style={critical}>
-                    <h5>Average</h5>
-                </div>
+                <div></div>
                 <div style={btn}>
                     <Button variant="text" style={{ marginTop: '0.5rem' }}>
                         View
@@ -104,9 +98,7 @@ function Medium() {
                 <div style={Kpi}>
                     <h5> Tracking area update success rate </h5>
                 </div>
-                <div style={critical}>
-                    <h5>Average</h5>
-                </div>
+                <div></div>
                 <div style={btn}>
                     <Button variant="text" style={{ marginTop: '0.5rem' }}>
                         View
@@ -126,9 +118,7 @@ function Medium() {
                 <div style={Kpi}>
                     <h5> Attach delay </h5>
                 </div>
-                <div style={critical}>
-                    <h5>Average</h5>
-                </div>
+                <div></div>
                 <div style={btn}>
                     <Button variant="text" style={{ marginTop: '0.5rem' }}>
                         View

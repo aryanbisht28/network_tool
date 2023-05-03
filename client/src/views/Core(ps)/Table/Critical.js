@@ -38,9 +38,7 @@ function Critical() {
                 <div style={Kpi}>
                     <h5>Packet Retransmission Rate</h5>
                 </div>
-                <div style={critical}>
-                    <h5>Critical</h5>
-                </div>
+                <div></div>
                 <div style={btn}>
                     <Button variant="text" style={{ marginTop: '0.5rem' }}>
                         View
@@ -60,9 +58,7 @@ function Critical() {
                 <div style={Kpi}>
                     <h5>Network Uptime</h5>
                 </div>
-                <div style={critical}>
-                    <h5>Critical</h5>
-                </div>
+                <div></div>
                 <div style={btn}>
                     <Button variant="text" style={{ marginTop: '0.5rem' }}>
                         View
@@ -82,9 +78,7 @@ function Critical() {
                 <div style={Kpi}>
                     <h5>Mean Time Between Failures</h5>
                 </div>
-                <div style={critical}>
-                    <h5>Critical</h5>
-                </div>
+                <div></div>
                 <div style={btn}>
                     <Button variant="text" style={{ marginTop: '0.5rem' }}>
                         View
@@ -104,9 +98,7 @@ function Critical() {
                 <div style={Kpi}>
                     <h5>Service Availability</h5>
                 </div>
-                <div style={critical}>
-                    <h5>Critical</h5>
-                </div>
+                <div></div>
                 <div style={btn}>
                     <Button variant="text" style={{ marginTop: '0.5rem' }}>
                         View
@@ -126,9 +118,7 @@ function Critical() {
                 <div style={Kpi}>
                     <h5>Attach success rate</h5>
                 </div>
-                <div style={critical}>
-                    <h5>Critical</h5>
-                </div>
+                <div></div>
                 <div style={btn}>
                     <Button variant="text" style={{ marginTop: '0.5rem' }}>
                         View
@@ -148,9 +138,7 @@ function Critical() {
                 <div style={Kpi}>
                     <h5>Bearer setup success rate </h5>
                 </div>
-                <div style={critical}>
-                    <h5>Critical</h5>
-                </div>
+                <div></div>
                 <div style={btn}>
                     <Button variant="text" style={{ marginTop: '0.5rem' }}>
                         View

@@ -99,9 +99,7 @@ function Medium() {
                 <div style={Kpi}>
                     <h5>Bit Error Rate</h5>
                 </div>
-                <div style={critical}>
-                    <h5>Average</h5>
-                </div>
+                <div></div>
                 <div style={btn}>
                     <Button variant="text" style={{ marginTop: '0.5rem' }}>
                         View
@@ -121,9 +119,7 @@ function Medium() {
                 <div style={Kpi}>
                     <h5>Packet Loss Rate (PLR)</h5>
                 </div>
-                <div style={critical}>
-                    <h5>Average</h5>
-                </div>
+                <div></div>
                 <div style={btn}>
                     <Button variant="text" style={{ marginTop: '0.5rem' }}>
                         View
@@ -143,9 +139,7 @@ function Medium() {
                 <div style={Kpi}>
                     <h5>Latency or Delay</h5>
                 </div>
-                <div style={critical}>
-                    <h5>Average</h5>
-                </div>
+                <div></div>
                 <div style={btn}>
                     <Button variant="text" style={{ marginTop: '0.5rem' }}>
                         View
@@ -165,9 +159,7 @@ function Medium() {
                 <div style={Kpi}>
                     <h5>Round Trip Time (RTT)</h5>
                 </div>
-                <div style={critical}>
-                    <h5>Average</h5>
-                </div>
+                <div></div>
                 <div style={btn}>
                     <Button variant="text" style={{ marginTop: '0.5rem' }}>
                         View

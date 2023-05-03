@@ -63,9 +63,7 @@ function Normal() {
                 <div style={Kpi}>
                     <h5>session establishment success rate</h5>
                 </div>
-                <div style={critical}>
-                    <h5>Normal</h5>
-                </div>
+                <div></div>
                 <div style={btn}>
                     <Button variant="text" style={{ marginTop: '0.5rem' }} onClick={handleOpen}>
                         View
@@ -334,9 +332,7 @@ function Normal() {
                 <div style={Kpi}>
                     <h5>Location update success rate</h5>
                 </div>
-                <div style={critical}>
-                    <h5>Normal</h5>
-                </div>
+                <div></div>
                 <div style={btn}>
                     <Button variant="text" style={{ marginTop: '0.5rem' }}>
                         View
@@ -510,9 +506,7 @@ function Normal() {
                 <div style={Kpi}>
                     <h5>data session retention rate</h5>
                 </div>
-                <div style={critical}>
-                    <h5>Normal</h5>
-                </div>
+                <div></div>
                 <div style={btn}>
                     <Button variant="text" style={{ marginTop: '0.5rem' }}>
                         View
@@ -686,9 +680,7 @@ function Normal() {
                 <div style={Kpi}>
                     <h5>Core Network Retainability</h5>
                 </div>
-                <div style={critical}>
-                    <h5>Normal</h5>
-                </div>
+                <div></div>
                 <div style={btn}>
                     <Button variant="text" style={{ marginTop: '0.5rem' }}>
                         View
@@ -715,9 +707,7 @@ function Normal() {
                 <div style={Kpi}>
                     <h5>VoLTE Call Setup Time</h5>
                 </div>
-                <div style={critical}>
-                    <h5>Normal</h5>
-                </div>
+                <div></div>
                 <div style={btn}>
                     <Button variant="text" style={{ marginTop: '0.5rem' }}>
                         View
@@ -744,9 +734,7 @@ function Normal() {
                 <div style={Kpi}>
                     <h5>VoLTE Call Setup Delay</h5>
                 </div>
-                <div style={critical}>
-                    <h5>Normal</h5>
-                </div>
+                <div></div>
                 <div style={btn}>
                     <Button variant="text" style={{ marginTop: '0.5rem' }}>
                         View
@@ -773,9 +761,7 @@ function Normal() {
                 <div style={Kpi}>
                     <h5>VoLTE Seizure Success Rate</h5>
                 </div>
-                <div style={critical}>
-                    <h5>Normal</h5>
-                </div>
+                <div></div>
                 <div style={btn}>
                     <Button variant="text" style={{ marginTop: '0.5rem' }}>
                         View

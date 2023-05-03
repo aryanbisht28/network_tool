@@ -56,9 +56,7 @@ function Normal() {
                 <div style={Kpi}>
                     <h5>Packet Loss Rate</h5>
                 </div>
-                <div style={critical}>
-                    <h5>Normal</h5>
-                </div>
+                <div></div>
                 <div style={btn}>
                     <Button variant="text" style={{ marginTop: '0.5rem' }} onClick={handleOpen}>
                         View
@@ -244,9 +242,7 @@ function Normal() {
                 <div style={Kpi}>
                     <h5>LTE Transmission Network Availability</h5>
                 </div>
-                <div style={critical}>
-                    <h5>Normal</h5>
-                </div>
+                <div></div>
                 <div style={btn}>
                     <Button variant="text" style={{ marginTop: '0.5rem' }}>
                         View
@@ -266,9 +262,7 @@ function Normal() {
                 <div style={Kpi}>
                     <h5>Transmission Network Utilization</h5>
                 </div>
-                <div style={critical}>
-                    <h5>Normal</h5>
-                </div>
+                <div></div>
                 <div style={btn}>
                     <Button variant="text" style={{ marginTop: '0.5rem' }}>
                         View
@@ -288,9 +282,7 @@ function Normal() {
                 <div style={Kpi}>
                     <h5>Transmission Network Latency:</h5>
                 </div>
-                <div style={critical}>
-                    <h5>Normal</h5>
-                </div>
+                <div></div>
                 <div style={btn}>
                     <Button variant="text" style={{ marginTop: '0.5rem' }}>
                         View
@@ -310,9 +302,7 @@ function Normal() {
                 <div style={Kpi}>
                     <h5>Jitter</h5>
                 </div>
-                <div style={critical}>
-                    <h5>Normal</h5>
-                </div>
+                <div></div>
                 <div style={btn}>
                     <Button variant="text" style={{ marginTop: '0.5rem' }}>
                         View
