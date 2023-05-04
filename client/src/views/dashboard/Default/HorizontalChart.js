@@ -55,7 +55,7 @@ function HorizontalChart() {
         labels: ['UP East', 'UP West', 'Goa', 'HP', 'Delhi'],
         datasets: [
             {
-                data: [98, 90, 94, 90, 96],
+                data: [93, 92.3, 92, 91.7, 91.5],
                 backgroundColor: '#8884d8',
                 borderColor: '#8884d8'
             }
@@ -106,21 +106,14 @@ function HorizontalChart() {
                 }}
             />
             <Bar options={options} data={data} />
-            <div className="container" style={{ height: '40vh', width: '100%', overflowY: 'scroll' }}>
-                <div style={Kpi}>
-                    <h5>UP West</h5>
-                </div>
-                <div
-                    style={{
-                        width: '100%',
-                        height: '1.5px',
-                        backgroundColor: '#cdcdcd',
-                        marginTop: '10px',
-                        marginBottom: '10px'
-                    }}
-                />
-                <div style={Kpi}>
-                    <h5>UP East</h5>
+            <div className="container" style={{ height: '40vh', width: '100%', overflowY: 'scroll', marginTop: '1rem' }}>
+                <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+                    <div style={Kpi}>
+                        <h5>UP West</h5>
+                    </div>
+                    <div style={{ width: '35%' }}>
+                        <h5>93%</h5>
+                    </div>
                 </div>
 
                 <div
@@ -128,12 +121,16 @@ function HorizontalChart() {
                         width: '100%',
                         height: '1.5px',
                         backgroundColor: '#cdcdcd',
-                        marginTop: '10px',
                         marginBottom: '10px'
                     }}
                 />
-                <div style={Kpi}>
-                    <h5>Tamil Nadu</h5>
+                <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+                    <div style={Kpi}>
+                        <h5>UP East</h5>
+                    </div>
+                    <div style={{ width: '35%' }}>
+                        <h5>92.4%</h5>
+                    </div>
                 </div>
 
                 <div
@@ -141,43 +138,74 @@ function HorizontalChart() {
                         width: '100%',
                         height: '1.5px',
                         backgroundColor: '#cdcdcd',
-                        marginTop: '10px',
                         marginBottom: '10px'
                     }}
                 />
-                <div style={Kpi}>
-                    <h5>Goa</h5>
+                <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+                    <div style={Kpi}>
+                        <h5>Goa</h5>
+                    </div>
+                    <div style={{ width: '35%' }}>
+                        <h5>92%</h5>
+                    </div>
                 </div>
+
                 <div
                     style={{
                         width: '100%',
                         height: '1.5px',
                         backgroundColor: '#cdcdcd',
-                        marginTop: '10px',
                         marginBottom: '10px'
                     }}
                 />
-                <div style={Kpi}>
-                    <h5>Delhi</h5>
+                <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+                    <div style={Kpi}>
+                        <h5>Himachal Pradesh</h5>
+                    </div>
+                    <div style={{ width: '35%' }}>
+                        <h5>91.7%</h5>
+                    </div>
                 </div>
+
                 <div
                     style={{
                         width: '100%',
                         height: '1.5px',
                         backgroundColor: '#cdcdcd',
-                        marginTop: '10px',
                         marginBottom: '10px'
                     }}
                 />
-                <div style={Kpi}>
-                    <h5>Himachal Pradesh</h5>
+                <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+                    <div style={Kpi}>
+                        <h5>Delhi</h5>
+                    </div>
+                    <div style={{ width: '35%' }}>
+                        <h5>91.5%</h5>
+                    </div>
                 </div>
+
                 <div
                     style={{
                         width: '100%',
                         height: '1.5px',
                         backgroundColor: '#cdcdcd',
-                        marginTop: '10px',
+                        marginBottom: '10px'
+                    }}
+                />
+                <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+                    <div style={Kpi}>
+                        <h5>Uttrakhand</h5>
+                    </div>
+                    <div style={{ width: '35%' }}>
+                        <h5>91%</h5>
+                    </div>
+                </div>
+
+                <div
+                    style={{
+                        width: '100%',
+                        height: '1.5px',
+                        backgroundColor: '#cdcdcd',
                         marginBottom: '10px'
                     }}
                 />
