@@ -264,7 +264,7 @@ function Critical() {
                 <div style={Kpi}>
                     <h5>Average Call Duration (ACD)</h5>
                 </div>
-                
+
                 <div style={btn}>
                     <Button variant="text" style={{ marginTop: '0.5rem' }}>
                         View
@@ -291,7 +291,7 @@ function Critical() {
                 <div style={Kpi}>
                     <h5>Call Setup Success Rate (CSSR)</h5>
                 </div>
-                
+
                 <div style={btn}>
                     <Button variant="text" style={{ marginTop: '0.5rem' }}>
                         View
@@ -318,7 +318,7 @@ function Critical() {
                 <div style={Kpi}>
                     <h5>Call Drop Rate</h5>
                 </div>
-                
+
                 <div style={btn}>
                     <Button variant="text" style={{ marginTop: '0.5rem' }}>
                         View
@@ -345,7 +345,7 @@ function Critical() {
                 <div style={Kpi}>
                     <h5>Call Completion Time</h5>
                 </div>
-                
+
                 <div style={btn}>
                     <Button variant="text" style={{ marginTop: '0.5rem' }}>
                         View
