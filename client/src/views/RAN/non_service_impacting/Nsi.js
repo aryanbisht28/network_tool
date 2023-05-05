@@ -154,7 +154,7 @@ function Nsi() {
                                         }}
                                     >
                                         Average
-                                    </Button>
+                     b                 </Button>
                                     <Button
                                         variant="outlined"
                                         onClick={() => {
