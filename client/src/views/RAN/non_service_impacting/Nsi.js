@@ -153,8 +153,8 @@ function Nsi() {
                                             setKpi('20');
                                         }}
                                     >
-                                        Average
-                     b                 </Button>
+                                        Average b{' '}
+                                    </Button>
                                     <Button
                                         variant="outlined"
                                         onClick={() => {
