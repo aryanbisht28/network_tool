@@ -28,7 +28,7 @@ const CardWrapper = styled(MainCard)(({ theme }) => ({
 // }
 
 const RanCard = ({ isLoading }) => {
-    const value = 0.66;
+    const value = 0.98;
     return (
         <>
             {isLoading ? (

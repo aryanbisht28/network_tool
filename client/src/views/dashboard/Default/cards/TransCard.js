@@ -28,7 +28,7 @@ const CardWrapper = styled(MainCard)(({ theme }) => ({
 // }
 
 const TransCard = ({ isLoading }) => {
-    const value = 0.1;
+    const value = 0.97;
     return (
         <>
             {isLoading ? (
