@@ -3,7 +3,7 @@ import Card from '@mui/material/Card';
 
 function TopKpi() {
     let Kpi = {
-        width: '65%',
+        width: '55%',
         display: 'flex',
         justifyContent: 'left',
         alignItems: 'center',
@@ -40,9 +40,15 @@ function TopKpi() {
                 }}
             />
             <div className="container" style={{ height: '40vh', width: '100%', overflowY: 'scroll' }}>
-                <div style={Kpi}>
-                    <h5>Radio resource control setup success rate</h5>
+                <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+                    <div style={Kpi}>
+                        <h5>Radio resource control setup success rate</h5>
+                    </div>
+                    <div style={{ width: '45%' }}>
+                        <h5>97%</h5>
+                    </div>
                 </div>
+
                 <div
                     style={{
                         width: '100%',
@@ -52,9 +58,15 @@ function TopKpi() {
                         marginBottom: '10px'
                     }}
                 />
-                <div style={Kpi}>
-                    <h5>Attach success rate</h5>
+                <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+                    <div style={Kpi}>
+                        <h5>Attach success rate</h5>
+                    </div>
+                    <div style={{ width: '45%' }}>
+                        <h5>96.7%</h5>
+                    </div>
                 </div>
+
                 <div
                     style={{
                         width: '100%',
@@ -64,9 +76,15 @@ function TopKpi() {
                         marginBottom: '10px'
                     }}
                 />
-                <div style={Kpi}>
-                    <h5>RAN Connection Setup Success Rate</h5>
+                <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+                    <div style={Kpi}>
+                        <h5>RAN Connection Setup Success Rate</h5>
+                    </div>
+                    <div style={{ width: '45%' }}>
+                        <h5>96.2%</h5>
+                    </div>
                 </div>
+
                 <div
                     style={{
                         width: '100%',
@@ -76,9 +94,15 @@ function TopKpi() {
                         marginBottom: '10px'
                     }}
                 />
-                <div style={Kpi}>
-                    <h5>Tracking Area Update Success Rate</h5>
+                <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+                    <div style={Kpi}>
+                        <h5>Tracking Area Update Success Rate</h5>
+                    </div>
+                    <div style={{ width: '45%' }}>
+                        <h5>95.8%</h5>
+                    </div>
                 </div>
+
                 <div
                     style={{
                         width: '100%',
@@ -88,9 +112,15 @@ function TopKpi() {
                         marginBottom: '10px'
                     }}
                 />
-                <div style={Kpi}>
-                    <h5>Packet Retransmission Rate</h5>
+                <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+                    <div style={Kpi}>
+                        <h5>Packet Retransmission Rate</h5>
+                    </div>
+                    <div style={{ width: '45%' }}>
+                        <h5>95.2%</h5>
+                    </div>
                 </div>
+
                 <div
                     style={{
                         width: '100%',
@@ -100,9 +130,15 @@ function TopKpi() {
                         marginBottom: '10px'
                     }}
                 />
-                <div style={Kpi}>
-                    <h5>Network Uptime</h5>
+                <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+                    <div style={Kpi}>
+                        <h5>Network Uptime</h5>
+                    </div>
+                    <div style={{ width: '45%' }}>
+                        <h5>94.4%</h5>
+                    </div>
                 </div>
+
                 <div
                     style={{
                         width: '100%',
@@ -112,9 +148,15 @@ function TopKpi() {
                         marginBottom: '10px'
                     }}
                 />
-                <div style={Kpi}>
-                    <h5>Mean Time Between Failures</h5>
+                <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+                    <div style={Kpi}>
+                        <h5>Mean Time Between Failures</h5>
+                    </div>
+                    <div style={{ width: '45%' }}>
+                        <h5>94%</h5>
+                    </div>
                 </div>
+
                 <div
                     style={{
                         width: '100%',
@@ -124,9 +166,15 @@ function TopKpi() {
                         marginBottom: '10px'
                     }}
                 />
-                <div style={Kpi}>
-                    <h5>PS Data Session Success Rate</h5>
+                <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+                    <div style={Kpi}>
+                        <h5>PS Data Session Success Rate</h5>
+                    </div>
+                    <div style={{ width: '45%' }}>
+                        <h5>93.6%</h5>
+                    </div>
                 </div>
+
                 <div
                     style={{
                         width: '100%',
@@ -136,9 +184,15 @@ function TopKpi() {
                         marginBottom: '10px'
                     }}
                 />
-                <div style={Kpi}>
-                    <h5>Service Accessibility </h5>
+                <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+                    <div style={Kpi}>
+                        <h5>Service Accessibility </h5>
+                    </div>
+                    <div style={{ width: '45%' }}>
+                        <h5>93.2%</h5>
+                    </div>
                 </div>
+
                 <div
                     style={{
                         width: '100%',

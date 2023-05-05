@@ -99,7 +99,7 @@ const EarningCard = ({ isLoading, name, value }) => {
                                     variant="h2"
                                     style={{ fontWeight: '500', textAlign: 'center', fontSize: '2em', margin: '0.2em' }}
                                 >
-                                    10
+                                    16
                                 </Typography>
                             </Grid>
                         </Grid>
