@@ -10,13 +10,35 @@ ChartJS.register(CategoryScale, LinearScale, PointElement, LineElement, Title, T
 function LineChart() {
     const options = {
         responsive: true,
+        tension: 0.5,
+        pointStrokeColor: '#ffc8dd',
+        pointColor: '#ffc8dd',
+        strokeColor: '#ffc8dd',
+        scales: {
+            x: {
+                grid: {
+                    display: false
+                }
+            },
+            y: {
+                grid: {
+                    display: false
+                }
+            }
+        },
         plugins: {
             legend: {
-                position: 'top'
-            },
-            title: {
-                display: true,
-                text: 'KPI Performance'
+                position: 'top',
+                labels: {
+                    color: '#000000',
+                    font: {
+                        size: 8
+                    },
+                    align: 'center',
+                    padding: 5,
+                    usePointStyle: true,
+                    boxWidth: 6
+                }
             }
         }
     };

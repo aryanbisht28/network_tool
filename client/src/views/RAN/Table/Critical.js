@@ -10,6 +10,10 @@ import LineChart from './LineChart';
 import CriticalEle from './CriticalEle';
 import NormalEle from './NormalEle';
 import MediumEle from './MediumEle';
+import InputLabel from '@mui/material/InputLabel';
+import MenuItem from '@mui/material/MenuItem';
+import FormControl from '@mui/material/FormControl';
+import Select from '@mui/material/Select';
 
 const style = {
     position: 'absolute',
@@ -29,7 +33,7 @@ const style = {
 
 function Critical() {
     const [open, setOpen] = React.useState(false);
-    const [kpi, setKpi] = React.useState('');
+    const [kpi, setKpi] = React.useState('Critical');
     const handleOpen = () => {
         setOpen(true);
     };
@@ -44,6 +48,9 @@ function Critical() {
         setOpen1(false);
     };
 
+    const handleChange = (event) => {
+        setKpi(event.target.value);
+    };
     const critical = {
         width: '15%',
         display: 'flex',
@@ -95,7 +102,7 @@ function Critical() {
                     >
                         <Fade in={open}>
                             <Box sx={style}>
-                                {/* <h3>Threshold Value</h3> */}
+                                <h2 style={{ margin: '1rem', color: 'black' }}>KPI Performance View</h2>
                                 <div
                                     style={{
                                         display: 'flex',
@@ -118,7 +125,7 @@ function Critical() {
                                 <div>
                                     <LineChart />
                                 </div>
-
+                                {/* 
                                 <div
                                     style={{
                                         display: 'flex',
@@ -151,9 +158,30 @@ function Critical() {
                                     >
                                         Normal
                                     </Button>
+                                </div> */}
+                                <div style={{ display: 'flex', justifyContent: 'space-around', margin: '0.5rem' }}>
+                                    <div style={{ width: '80%' }}>
+                                        <h2 style={{ textAlign: 'left', fontSize: '1rem', color: 'Black' }}>List of Network Elements</h2>
+                                    </div>
+                                    <div style={{ width: '20%' }}>
+                                        <FormControl fullWidth>
+                                            <InputLabel id="demo-simple-select-label">Filter By</InputLabel>
+                                            <Select
+                                                labelId="demo-simple-select-label"
+                                                id="demo-simple-select"
+                                                value={kpi}
+                                                label="kpi list"
+                                                onChange={handleChange}
+                                            >
+                                                <MenuItem value={'Critical'}>Critical</MenuItem>
+                                                <MenuItem value={'Average'}>Average</MenuItem>
+                                                <MenuItem value={'Normal'}>Normal</MenuItem>
+                                            </Select>
+                                        </FormControl>
+                                    </div>
                                 </div>
                                 <div style={{ margin: '1rem' }}>
-                                    {kpi == '20' ? <MediumEle /> : kpi == '10' ? <NormalEle /> : <CriticalEle />}
+                                    {kpi == 'Average' ? <MediumEle /> : kpi == 'Normal' ? <NormalEle /> : <CriticalEle />}
                                 </div>
                             </Box>
                         </Fade>
