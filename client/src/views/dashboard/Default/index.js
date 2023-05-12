@@ -77,14 +77,14 @@ const Dashboard = () => {
                 <Grid container spacing={gridSpacing} xs={12} style={{ marginLeft: '1rem' }}>
                     <Grid item xs={3.5} style={{ marginTop: '1rem' }}>
                         <Card style={{ background: '#fff', height: '69vh' }}>
-                            <BarChart />
+                            <GaugeChart />
                             <TopKpi />
                         </Card>
                     </Grid>
-                    <Grid item xs={5.5} style={{ marginTop: '2rem' }}>
+                    <Grid item xs={5.5} style={{ marginTop: '1rem' }}>
                         <div style={{ display: 'flex', flexDirection: 'column' }}>
                             <div>
-                                <GaugeChart />
+                                <BarChart />
                             </div>
                             <div style={{ display: 'flex' }}>
                                 <div style={{ marginTop: '0.5rem' }}>

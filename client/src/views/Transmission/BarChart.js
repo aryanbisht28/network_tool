@@ -28,15 +28,17 @@ function BarChart() {
             }
         },
         plugins: {
+            datalabels: {
+                display: false
+            },
             legend: {
                 position: 'top',
                 labels: {
                     color: '#000000',
                     font: {
-                        size: 8
+                        size: 10
                     },
                     align: 'center',
-                    padding: 5,
                     usePointStyle: true,
                     boxWidth: 6
                 }

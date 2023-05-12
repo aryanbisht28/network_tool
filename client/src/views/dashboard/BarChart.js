@@ -14,6 +14,7 @@ function BarChart() {
         pointStrokeColor: '#ffc8dd',
         pointColor: '#ffc8dd',
         strokeColor: '#ffc8dd',
+        indexAxis: 'y',
         scales: {
             x: {
                 grid: {
@@ -27,6 +28,9 @@ function BarChart() {
             }
         },
         plugins: {
+            datalabels: {
+                display: false
+            },
             legend: {
                 position: 'top',
                 labels: {
@@ -48,21 +52,62 @@ function BarChart() {
     };
 
     //   const labels = ['January', 'February', 'March', 'April', 'May', 'June', 'July'];
+    // const options = {
+    //     responsive: true,
+    //     // maintainAspectRatio: false,
+    //     barThickness: 18, // Set the width of each bar in pixels
+    //     maxBarThickness: 40, // Set the maximum width of each bar in pixels
+    //     borderWidth: 1,
+    //     borderRadius: 20, // This will round the corners
+    //     // borderSkipped: false,
 
+    //     scales: {
+    //         x: {
+    //             stacked: false,
+    //             grid: {
+    //                 display: false
+    //             }
+    //         },
+    //         y: {
+    //             beginAtZero: true,
+    //             stacked: false,
+    //             grid: {
+    //                 display: false
+    //             }
+    //         }
+    //     },
+    //     plugins: {
+    // datalabels: {
+    //     display: false
+    // },
+    //         legend: {
+    //             labels: {
+    //                 color: '#000000',
+    //                 font: {
+    //                     size: 10
+    //                 },
+    //                 align: 'center',
+    //                 padding: 5,
+    //                 usePointStyle: true,
+    //                 boxWidth: 6
+    //             }
+    //         }
+    //     }
+    // };
     const data = {
         labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun'],
         datasets: [
             {
                 label: 'RAN',
                 data: [98, 90, 94, 90, 96, 98],
-                backgroundColor: '#8884d8',
-                borderColor: '#8884d8'
+                backgroundColor: '#82ca9d',
+                borderColor: '#82ca9d'
             },
             {
                 label: 'Transmission',
                 data: [97, 90, 98, 96, 98, 99],
-                backgroundColor: '#82ca9d',
-                borderColor: '#82ca9d'
+                backgroundColor: '#8884d8',
+                borderColor: '#8884d8'
             },
             {
                 label: 'Core',
@@ -82,7 +127,7 @@ function BarChart() {
     return (
         <Card
             style={{
-                height: '33vh',
+                height: '44.5vh',
                 position: 'relative',
                 marginBottom: '1%',
                 padding: '1%',
@@ -106,7 +151,7 @@ function BarChart() {
                     marginLeft: '0.5rem'
                 }}
             />
-            <Line options={options} data={data} />
+            <Bar options={options} data={data} type="horizontalBar" />
         </Card>
     );
 }

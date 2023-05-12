@@ -27,6 +27,9 @@ function HorizontalChart() {
             }
         },
         plugins: {
+            datalabels: {
+                display: false
+            },
             legend: {
                 display: false,
                 position: 'top',
@@ -116,15 +119,15 @@ function HorizontalChart() {
                     </div>
                 </div>
 
-                <div
+                {/* <div
                     style={{
                         width: '100%',
                         height: '1.5px',
                         backgroundColor: '#cdcdcd',
                         marginBottom: '10px'
                     }}
-                />
-                <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+                /> */}
+                <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', backgroundColor: '#f3f8fe' }}>
                     <div style={Kpi}>
                         <h5>UP East</h5>
                     </div>
@@ -133,14 +136,14 @@ function HorizontalChart() {
                     </div>
                 </div>
 
-                <div
+                {/* <div
                     style={{
                         width: '100%',
                         height: '1.5px',
                         backgroundColor: '#cdcdcd',
                         marginBottom: '10px'
                     }}
-                />
+                /> */}
                 <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
                     <div style={Kpi}>
                         <h5>Goa</h5>
@@ -150,15 +153,15 @@ function HorizontalChart() {
                     </div>
                 </div>
 
-                <div
+                {/* <div
                     style={{
                         width: '100%',
                         height: '1.5px',
                         backgroundColor: '#cdcdcd',
                         marginBottom: '10px'
                     }}
-                />
-                <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+                /> */}
+                <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', backgroundColor: '#f3f8fe' }}>
                     <div style={Kpi}>
                         <h5>Himachal Pradesh</h5>
                     </div>
@@ -167,14 +170,14 @@ function HorizontalChart() {
                     </div>
                 </div>
 
-                <div
+                {/* <div
                     style={{
                         width: '100%',
                         height: '1.5px',
                         backgroundColor: '#cdcdcd',
                         marginBottom: '10px'
                     }}
-                />
+                /> */}
                 <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
                     <div style={Kpi}>
                         <h5>Delhi</h5>
@@ -184,15 +187,7 @@ function HorizontalChart() {
                     </div>
                 </div>
 
-                <div
-                    style={{
-                        width: '100%',
-                        height: '1.5px',
-                        backgroundColor: '#cdcdcd',
-                        marginBottom: '10px'
-                    }}
-                />
-                <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+                <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', backgroundColor: '#f3f8fe' }}>
                     <div style={Kpi}>
                         <h5>Uttrakhand</h5>
                     </div>
@@ -200,15 +195,6 @@ function HorizontalChart() {
                         <h5>91%</h5>
                     </div>
                 </div>
-
-                <div
-                    style={{
-                        width: '100%',
-                        height: '1.5px',
-                        backgroundColor: '#cdcdcd',
-                        marginBottom: '10px'
-                    }}
-                />
             </div>
         </Card>
     );

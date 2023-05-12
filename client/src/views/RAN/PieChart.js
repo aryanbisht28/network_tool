@@ -2,6 +2,9 @@ import React from 'react';
 // import { PieChart } from 'react-minimal-pie-chart';
 import Card from '@mui/material/Card';
 import { Pie } from 'react-chartjs-2';
+import { Chart, DoughnutController, ArcElement } from 'chart.js';
+import ChartDataLabels from 'chartjs-plugin-datalabels';
+Chart.register(ChartDataLabels);
 
 function PieCharts() {
     const data = {
@@ -9,7 +12,7 @@ function PieCharts() {
         datasets: [
             {
                 data: [12, 3, 5, 14],
-                backgroundColor: ['#FF6384', '#FFCE56', '#2ecc71', 'red']
+                backgroundColor: ['#03045e', '#0077b6', '#00b4d8', 'blue']
             }
         ]
     };
@@ -20,6 +23,38 @@ function PieCharts() {
         //         text: 'KPI Pie Chart'
         //     }
         // },
+        plugins: {
+            title: {
+                display: true,
+                text: 'Testing Services Summary',
+                font: {
+                    size: 15
+                },
+                color: '#000000'
+            },
+            legend: {
+                labels: {
+                    color: '#000000',
+                    font: {
+                        size: 10
+                    },
+                    usePointStyle: true,
+                    boxWidth: 6
+                }
+            },
+            datalabels: {
+                display: true,
+                align: 'center',
+                labels: {
+                    value: {
+                        color: '#ffff'
+                    }
+                },
+                formatter: function (value) {
+                    return '\n' + value;
+                }
+            }
+        },
         responsive: true
     };
     return (

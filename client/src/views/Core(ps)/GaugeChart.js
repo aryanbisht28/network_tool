@@ -6,7 +6,7 @@ import 'react-circular-progressbar/dist/styles.css';
 import { Box, Grid, Typography } from '@mui/material';
 
 function GaugesChart() {
-    const value = 0.98;
+    const value = 0.97;
     return (
         <Card
             style={{

@@ -27,6 +27,9 @@ function LineChart() {
             }
         },
         plugins: {
+            datalabels: {
+                display: false
+            },
             legend: {
                 position: 'top',
                 labels: {

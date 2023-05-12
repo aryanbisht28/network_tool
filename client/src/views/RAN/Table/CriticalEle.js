@@ -163,7 +163,7 @@ function CriticalEle() {
                                         margin: '1rem'
                                     }}
                                 >
-                                    <div style={{ width: '70%', textAlign: 'left' }}>
+                                    <div style={{ width: '40%', textAlign: 'left' }}>
                                         <Typography id="transition-modal-title" variant="h3" component="h2">
                                             Incident No :
                                         </Typography>
@@ -171,7 +171,12 @@ function CriticalEle() {
                                             IXC-22020212-0042
                                         </Typography>
                                     </div>
-                                    <div style={{ width: '30%', textAlign: 'left' }}>
+                                    <div style={{ width: '40%', textAlign: 'left' }}>
+                                        <Typography id="transition-modal-title" variant="h3" component="h2">
+                                            Ageing :+4 Days
+                                        </Typography>
+                                    </div>
+                                    <div style={{ width: '20%', textAlign: 'left' }}>
                                         <Typography id="transition-modal-title" variant="h6" component="h2">
                                             Status:
                                         </Typography>
@@ -180,7 +185,7 @@ function CriticalEle() {
                                                 background: 'rgba(51, 102, 39, 0.37)',
                                                 border: ' 2px solid #215814',
                                                 borderRadius: '10px',
-                                                width: '28%',
+                                                width: '50%',
                                                 justifyContent: 'center',
                                                 display: 'flex',
                                                 height: '5vh',

@@ -15,6 +15,7 @@ function BarChart() {
         pointStrokeColor: '#ffc8dd',
         pointColor: '#ffc8dd',
         strokeColor: '#ffc8dd',
+
         scales: {
             x: {
                 grid: {
@@ -24,19 +25,25 @@ function BarChart() {
             y: {
                 grid: {
                     display: false
+                },
+                ticks: {
+                    beginAtZero: true
                 }
             }
         },
         plugins: {
+            datalabels: {
+                display: false
+            },
             legend: {
                 position: 'top',
                 labels: {
                     color: '#000000',
                     font: {
-                        size: 8
+                        size: 10
                     },
                     align: 'center',
-                    padding: 5,
+
                     usePointStyle: true,
                     boxWidth: 6
                 }
@@ -56,19 +63,19 @@ function BarChart() {
         datasets: [
             {
                 label: 'Critical',
-                data: [98, 90, 94, 90, 96, 98],
+                data: [98, 95, 95.8, 97, 96, 98],
                 backgroundColor: '#8884d8',
                 borderColor: '#8884d8'
             },
             {
                 label: 'Average',
-                data: [97, 90, 98, 96, 98, 99],
+                data: [97, 95.4, 98, 96, 98, 99],
                 backgroundColor: '#82ca9d',
                 borderColor: '#82ca9d'
             },
             {
                 label: 'Normal',
-                data: [99, 97, 98, 99, 99, 99],
+                data: [99, 96, 99, 99, 99, 99],
                 backgroundColor: '#480ca8',
                 borderColor: '#480ca8'
             }
