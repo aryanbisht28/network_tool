@@ -53,7 +53,7 @@ function LineChart() {
         datasets: [
             {
                 label: 'Radio resource control setup success rate',
-                data: [98, 86, 94, 90, 96, 98],
+                data: [99.9349, 99.9496, 99.9555, 99.9548, 99.9677, 99.9754],
                 borderColor: '#8884d8'
             }
         ]

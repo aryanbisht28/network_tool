@@ -108,7 +108,7 @@ function CriticalEle() {
                 <div style={{ width: '20%', display: 'flex', justifyContent: 'center', alignItems: 'center' }}></div>
             </div>
             <div style={bottomLine} />
-            <div className="container" style={{ overflowY: 'scroll', height: '13vh' }}>
+            <div className="container" style={{ overflowY: 'scroll', height: '7vh' }}>
                 <div style={{ display: 'flex', justifyContent: 'center', alignItem: 'center', height: '5vh' }}>
                     <div style={{ width: '30%', display: 'flex', alignItems: 'center' }}>
                         <h5 style={yellow}>EMRZRLGG0662</h5>

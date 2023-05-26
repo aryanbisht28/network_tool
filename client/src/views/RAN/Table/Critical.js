@@ -14,6 +14,7 @@ import InputLabel from '@mui/material/InputLabel';
 import MenuItem from '@mui/material/MenuItem';
 import FormControl from '@mui/material/FormControl';
 import Select from '@mui/material/Select';
+import KpiModal from './KpiModal';
 
 const style = {
     position: 'absolute',
@@ -34,6 +35,10 @@ const style = {
 function Critical() {
     const [open, setOpen] = React.useState(false);
     const [kpi, setKpi] = React.useState('Critical');
+    const handleChange = (event) => {
+        setKpi(event.target.value);
+    };
+
     const handleOpen = () => {
         setOpen(true);
     };
@@ -48,9 +53,6 @@ function Critical() {
         setOpen1(false);
     };
 
-    const handleChange = (event) => {
-        setKpi(event.target.value);
-    };
     const critical = {
         width: '15%',
         display: 'flex',
@@ -80,9 +82,8 @@ function Critical() {
         <div>
             <div style={{ display: 'flex', justifyContent: 'center', height: '5vh' }}>
                 <div style={Kpi}>
-                    <h5>Radio resource control setup success rate</h5>
+                    <h5>Radio Network Availability Rate</h5>
                 </div>
-                <div></div>
                 <div style={btn}>
                     <Button variant="text" style={{ marginTop: '0.5rem' }} onClick={handleOpen}>
                         View
@@ -113,7 +114,7 @@ function Critical() {
                                 >
                                     <div style={{ width: '50%', textAlign: 'left' }}>
                                         <Typography id="transition-modal-title" variant="h4" component="h2">
-                                            Current Value : 97.6
+                                            Current Value : 96.92
                                         </Typography>
                                     </div>
                                     <div style={{ width: '50%', textAlign: 'right' }}>
@@ -125,40 +126,6 @@ function Critical() {
                                 <div>
                                     <LineChart />
                                 </div>
-                                {/* 
-                                <div
-                                    style={{
-                                        display: 'flex',
-                                        justifyContent: 'space-between',
-                                        alignItems: 'center',
-                                        margin: '1rem'
-                                    }}
-                                >
-                                    <Button
-                                        variant="outlined"
-                                        onClick={() => {
-                                            setKpi('30');
-                                        }}
-                                    >
-                                        Critical
-                                    </Button>
-                                    <Button
-                                        variant="outlined"
-                                        onClick={() => {
-                                            setKpi('20');
-                                        }}
-                                    >
-                                        Average
-                                    </Button>
-                                    <Button
-                                        variant="outlined"
-                                        onClick={() => {
-                                            setKpi('10');
-                                        }}
-                                    >
-                                        Normal
-                                    </Button>
-                                </div> */}
                                 <div style={{ display: 'flex', justifyContent: 'space-around', margin: '0.5rem' }}>
                                     <div style={{ width: '80%' }}>
                                         <h2 style={{ textAlign: 'left', fontSize: '1rem', color: 'Black' }}>List of Network Elements</h2>
@@ -186,118 +153,6 @@ function Critical() {
                             </Box>
                         </Fade>
                     </Modal>
-                </div>
-            </div>
-            <div
-                style={{
-                    width: '100%',
-                    height: '1.5px',
-                    backgroundColor: '#cdcdcd',
-                    marginTop: '10px',
-                    marginBottom: '10px'
-                }}
-            />
-            <div style={{ display: 'flex', justifyContent: 'center', height: '5vh' }}>
-                <div style={Kpi}>
-                    <h5>Attach success rate</h5>
-                </div>
-                <div></div>
-                <div style={btn}>
-                    <Button variant="text" style={{ marginTop: '0.5rem' }} onClick={handleOpen1}>
-                        View
-                    </Button>
-                    <Modal
-                        aria-labelledby="transition-modal-title"
-                        aria-describedby="transition-modal-description"
-                        open={open1}
-                        onClose={handleClose1}
-                        closeAfterTransition
-                        slots={{ backdrop: Backdrop }}
-                        slotProps={{
-                            backdrop: {
-                                timeout: 500
-                            }
-                        }}
-                    >
-                        <Fade in={open1}>
-                            <Box sx={style}>
-                                <h3>Threshold Value</h3>
-                                <div
-                                    style={{
-                                        display: 'flex',
-                                        justifyContent: 'space-around',
-                                        alignItems: 'center'
-                                    }}
-                                >
-                                    <div style={{ width: '50%', textAlign: 'center' }}>
-                                        <Typography id="transition-modal-title" variant="h6" component="h2">
-                                            Ideal Value : 98
-                                        </Typography>
-                                    </div>
-                                    <div style={{ width: '50%', textAlign: 'center' }}>
-                                        <Typography id="transition-modal-title" variant="h6" component="h2">
-                                            Current Value : 98.44
-                                        </Typography>
-                                    </div>
-                                </div>
-                                <h3>Network Elements</h3>
-                                {/* <div style={{ display: 'flex', justifyContent: 'center', alignItem: 'center', height: '5vh' }}>
-                                <div style={{ width: '80%' }}>
-                                    <Typography id="transition-modal-title" variant="h5" component="h2">
-                                        Network Elements
-                                    </Typography>
-                                </div>
-                                <div style={{ width: '20%' }}>
-                                    <Typography id="transition-modal-title" variant="h5" component="h2">
-                                        Value
-                                    </Typography>
-                                </div>
-                            </div> */}
-                                <div className="container" style={{ overflowY: 'scroll', height: '40vh' }}>
-                                    <div
-                                        style={{
-                                            display: 'flex',
-                                            justifyContent: 'center',
-                                            alignItem: 'center',
-                                            height: '5vh'
-                                        }}
-                                    >
-                                        <div style={{ width: '80%' }}>
-                                            <Typography id="transition-modal-description" sx={{ mt: 2 }}>
-                                                KYQ
-                                            </Typography>
-                                        </div>
-                                        <div style={{ width: '20%' }}>
-                                            <Typography id="transition-modal-description" sx={{ mt: 2 }}>
-                                                96%
-                                            </Typography>
-                                        </div>
-                                    </div>
-                                </div>
-                            </Box>
-                        </Fade>
-                    </Modal>
-                </div>
-            </div>
-            <div
-                style={{
-                    width: '100%',
-                    height: '1.5px',
-                    backgroundColor: '#cdcdcd',
-                    marginTop: '10px',
-                    marginBottom: '10px'
-                }}
-            />
-            <div style={{ display: 'flex', justifyContent: 'center', height: '5vh' }}>
-                <div style={Kpi}>
-                    <h5>RAN Connection Setup Success Rate</h5>
-                </div>
-                <div></div>
-
-                <div style={btn}>
-                    <Button variant="text" style={{ marginTop: '0.5rem' }}>
-                        View
-                    </Button>
                 </div>
             </div>
             <div

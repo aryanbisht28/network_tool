@@ -6,7 +6,7 @@ import 'react-circular-progressbar/dist/styles.css';
 import { Box, Grid, Typography } from '@mui/material';
 
 function GaugesChart() {
-    const value = 0.98;
+    const value = 99.11;
     return (
         <Card
             style={{
@@ -32,7 +32,7 @@ function GaugesChart() {
             </Grid>
             <Grid container direction="column" style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
                 <Grid style={{ width: 120, height: 120 }}>
-                    <CircularProgressbar value={value} maxValue={1} text={`${value * 100}%`} />
+                    <CircularProgressbar value={value} maxValue={1} text={`${value}%`} />
                 </Grid>
             </Grid>
         </Card>

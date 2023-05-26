@@ -99,22 +99,22 @@ function BarChart() {
         datasets: [
             {
                 label: 'RAN',
-                data: [98, 90, 94, 90, 96, 98],
+                data: [98.25, 98.99, 99, 99.11, 99.23, 99.67],
                 backgroundColor: '#82ca9d',
                 borderColor: '#82ca9d'
-            },
-            {
-                label: 'Transmission',
-                data: [97, 90, 98, 96, 98, 99],
-                backgroundColor: '#8884d8',
-                borderColor: '#8884d8'
-            },
-            {
-                label: 'Core',
-                data: [99, 97, 98, 99, 99, 99],
-                backgroundColor: '#480ca8',
-                borderColor: '#480ca8'
             }
+            // {
+            //     label: 'Transmission',
+            //     data: [97, 90, 98, 96, 98, 99],
+            //     backgroundColor: '#8884d8',
+            //     borderColor: '#8884d8'
+            // },
+            // {
+            //     label: 'Core',
+            //     data: [99, 97, 98, 99, 99, 99],
+            //     backgroundColor: '#480ca8',
+            //     borderColor: '#480ca8'
+            // }
             // {
             //     label: 'Core(PS)',
             //     data: [98, 99, 98, 97, 98, 99],

@@ -51,7 +51,7 @@ function PieCharts() {
                     }
                 },
                 formatter: function (value) {
-                    return '\n' + value;
+                    return '\n' + value + '%';
                 }
             }
         },

@@ -61,12 +61,12 @@ function BarChart() {
     const data = {
         labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun'],
         datasets: [
-            {
-                label: 'Critical',
-                data: [98, 95, 95.8, 97, 96, 98],
-                backgroundColor: '#8884d8',
-                borderColor: '#8884d8'
-            },
+            // {
+            //     label: 'Critical',
+            //     data: [98, 95, 95.8, 97, 96, 98],
+            //     backgroundColor: '#8884d8',
+            //     borderColor: '#8884d8'
+            // },
             {
                 label: 'Average',
                 data: [97, 95.4, 98, 96, 98, 99],

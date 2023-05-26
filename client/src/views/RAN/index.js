@@ -98,7 +98,7 @@ function Index() {
                                         }}
                                     />
                                     <div className="container" style={{ overflowY: 'scroll', height: '23.5vh', margin: '1rem' }}>
-                                        {kpi == 'Service Impacting' ? <Nsi /> : kpi == 'Non-Service Impacting' ? <Service /> : <All />}
+                                        {kpi == 'Service Impacting' ? <Service /> : kpi == 'Non-Service Impacting' ? <Normal /> : <All />}
                                     </div>
                                 </Card>
                             </div>

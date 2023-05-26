@@ -34,7 +34,7 @@ const RanCard = ({ isLoading }) => {
             {isLoading ? (
                 <SkeletonEarningCard />
             ) : (
-                <CardWrapper border={false} content={false} style={{ width: '22vh' }}>
+                <CardWrapper border={false} content={false}>
                     <Box sx={{ p: 1 }}>
                         <Grid sx={{ m: 1 }}>
                             <Typography

@@ -87,13 +87,13 @@ const Dashboard = () => {
                                 <BarChart />
                             </div>
                             <div style={{ display: 'flex' }}>
-                                <div style={{ marginTop: '0.5rem' }}>
+                                <div style={{ marginTop: '0.5rem', width: '33.33%' }}>
                                     <RanCard />
                                 </div>
-                                <div style={{ marginTop: '0.5rem', marginLeft: '0.7rem' }}>
+                                <div style={{ marginTop: '0.5rem', marginLeft: '0.7rem', width: '33.33%' }}>
                                     <CoreCard />
                                 </div>
-                                <div style={{ marginTop: '0.5rem', marginLeft: '0.7rem' }}>
+                                <div style={{ marginTop: '0.5rem', marginLeft: '0.7rem', width: '33.33%' }}>
                                     <TransCard />
                                 </div>
                             </div>

@@ -34,7 +34,7 @@ const TransCard = ({ isLoading }) => {
             {isLoading ? (
                 <SkeletonEarningCard />
             ) : (
-                <CardWrapper border={false} content={false} style={{ width: '22vh' }}>
+                <CardWrapper border={false} content={false}>
                     <Box sx={{ p: 1 }}>
                         <Grid container direction="column" style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
                             <Grid sx={{ m: 1 }}>
