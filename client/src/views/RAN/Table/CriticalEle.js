@@ -96,7 +96,10 @@ function CriticalEle() {
                 <div style={{ width: '30%', display: 'flex', alignItems: 'center' }}>
                     <h3>Network Elements</h3>
                 </div>
-                <div style={{ width: '15%', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+                <div style={{ width: '10%', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+                    <h3>Value</h3>
+                </div>
+                <div style={{ width: '10%', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
                     <h3>Location</h3>
                 </div>
                 <div style={{ width: '15%', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
@@ -108,14 +111,14 @@ function CriticalEle() {
                 <div style={{ width: '20%', display: 'flex', justifyContent: 'center', alignItems: 'center' }}></div>
             </div>
             <div style={bottomLine} />
-            <div className="container" style={{ overflowY: 'scroll', height: '13vh' }}>
+            <div className="container" style={{ overflowY: 'scroll', height: '7vh' }}>
                 <div style={{ display: 'flex', justifyContent: 'center', alignItem: 'center', height: '5vh' }}>
                     <div style={{ width: '30%', display: 'flex', alignItems: 'center' }}>
                         <h5 style={yellow}>PMRZRLGG0662</h5>
                     </div>
                     <div
                         style={{
-                            width: '15%',
+                            width: '10%',
                             display: 'flex',
                             justifyContent: 'center',
                             alignItems: 'center'
@@ -125,7 +128,7 @@ function CriticalEle() {
                     </div>
                     <div
                         style={{
-                            width: '15%',
+                            width: '10%',
                             display: 'flex',
                             justifyContent: 'center',
                             alignItems: 'center'
@@ -317,7 +320,7 @@ function CriticalEle() {
                                             </TableHead>
                                         </Table>
                                     </TableContainer>
-                                    <TableContainer component={Paper} style={{ overflowY: 'scroll', height: '15vh' }} class="container">
+                                    <TableContainer component={Paper} style={{ overflowY: 'scroll', height: '10vh' }} class="container">
                                         <Table aria-label="simple table">
                                             {/* <TableHead>
                                             <TableRow>
