@@ -1,7 +1,7 @@
 import React from 'react';
 import { Grid } from '@mui/material';
 import Button from '@mui/material/Button';
-import './Style/Scroll.css';
+import '../Style/Scroll.css';
 import Backdrop from '@mui/material/Backdrop';
 import Box from '@mui/material/Box';
 import Modal from '@mui/material/Modal';
@@ -21,6 +21,7 @@ import DialogContent from '@mui/material/DialogContent';
 import DialogContentText from '@mui/material/DialogContentText';
 import DialogTitle from '@mui/material/DialogTitle';
 import { width } from '@mui/system';
+import CloseIcon from '@mui/icons-material/Close';
 
 const style = {
     position: 'absolute',
@@ -28,7 +29,7 @@ const style = {
     left: '50%',
     transform: 'translate(-50%, -50%)',
     width: 800,
-    height: 550,
+    height: 570,
     bgcolor: 'background.paper',
     // border: '2px solid #000',
     boxShadow: 24,
@@ -67,7 +68,7 @@ function CriticalEle() {
     ];
 
     let yellow = {
-        color: 'green'
+        color: '#FF0000'
     };
 
     const critical = {
@@ -96,7 +97,7 @@ function CriticalEle() {
                 <div style={{ width: '25%', display: 'flex', alignItems: 'center' }}>
                     <h3>Network Elements</h3>
                 </div>
-                <div style={{ width: '10%', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+                <div style={{ width: '10%', display: 'flex', alignItems: 'center' }}>
                     <h3>Value</h3>
                 </div>
                 <div style={{ width: '10%', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
@@ -114,14 +115,360 @@ function CriticalEle() {
             <div className="container" style={{ overflowY: 'scroll', height: '7vh' }}>
                 <div style={{ display: 'flex', justifyContent: 'center', alignItem: 'center', height: '5vh' }}>
                     <div style={{ width: '25%', display: 'flex', alignItems: 'center' }}>
-                        <h5 style={yellow}>EMRZRLGG0662</h5>
+                        <h5 style={yellow}>PMRZRLGG0662</h5>
                     </div>
                     <div style={{ width: '10%', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-                        <h5>99.56%</h5>
+                        <h5>97.06%</h5>
                     </div>
                     <div
                         style={{
                             width: '10%',
+                            display: 'flex',
+                            justifyContent: 'center',
+                            alignItems: 'center'
+                        }}
+                    >
+                        <h5>UP East</h5>
+                    </div>
+
+                    <div
+                        style={{
+                            width: '15%',
+                            display: 'flex',
+                            justifyContent: 'center',
+                            alignItems: 'center'
+                        }}
+                    >
+                        <h5>24.879999</h5>
+                    </div>
+                    <div
+                        style={{
+                            width: '20%',
+                            display: 'flex',
+                            justifyContent: 'center',
+                            alignItems: 'center'
+                        }}
+                    >
+                        <h5>74.629997</h5>
+                    </div>
+                    <div style={{ width: '20%', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+                        <Button variant="text" onClick={handleOpen}>
+                            View
+                        </Button>
+                        <Modal
+                            open={open}
+                            onClose={handleClose}
+                            // style={{ width: '600px' }}
+                            aria-labelledby="parent-modal-title"
+                            aria-describedby="parent-modal-description"
+                        >
+                            <Box sx={{ ...style, width: 800 }}>
+                                <div style={{ width: '100%', display: 'flex', justifyContent: 'right', alignItems: 'center' }}>
+                                    <CloseIcon onClick={handleClose} />
+                                </div>
+                                <div
+                                    style={{
+                                        display: 'flex',
+                                        justifyContent: 'space-between',
+                                        alignItems: 'center',
+                                        margin: '1rem'
+                                    }}
+                                >
+                                    <div style={{ width: '40%', textAlign: 'left' }}>
+                                        <Typography id="transition-modal-title" variant="h3" component="h2">
+                                            Incident No :
+                                        </Typography>
+                                        <Typography id="transition-modal-title" variant="h3" component="h2">
+                                            IXC-22020212-0042
+                                        </Typography>
+                                    </div>
+                                    <div style={{ width: '40%', textAlign: 'left' }}>
+                                        <Typography id="transition-modal-title" variant="h3" component="h2">
+                                            Ageing :+4 Days
+                                        </Typography>
+                                    </div>
+                                    <div style={{ width: '20%', textAlign: 'left' }}>
+                                        <Typography id="transition-modal-title" variant="h6" component="h2">
+                                            Status:
+                                        </Typography>
+                                        <div
+                                            style={{
+                                                background: 'rgba(51, 102, 39, 0.37)',
+                                                border: ' 2px solid #215814',
+                                                borderRadius: '10px',
+                                                width: '50%',
+                                                justifyContent: 'center',
+                                                display: 'flex',
+                                                height: '5vh',
+                                                alignItems: 'center'
+                                            }}
+                                        >
+                                            <span style={{ color: '#165009' }}>Open</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div
+                                    style={{
+                                        border: '1px solid #000000',
+                                        borderRadius: '20px',
+                                        width: '28%',
+                                        justifyContent: 'space-around',
+                                        display: 'flex',
+                                        flexDirection: 'column',
+                                        width: '100%'
+                                    }}
+                                >
+                                    <div
+                                        style={{
+                                            display: 'flex',
+                                            justifyContent: 'space-between',
+                                            alignItems: 'center',
+                                            margin: '0.5rem'
+                                        }}
+                                    >
+                                        <div style={{ width: '70%', textAlign: 'left' }}>
+                                            <Typography id="transition-modal-title" variant="h6" component="h2">
+                                                Outage category : Packet loss
+                                            </Typography>
+                                        </div>
+                                        <div style={{ width: '30%', textAlign: 'left' }}>
+                                            <Typography id="transition-modal-title" variant="h6" component="h2">
+                                                Severity: Critical / Priority: N/A
+                                            </Typography>
+                                        </div>
+                                    </div>
+                                    <div
+                                        style={{
+                                            display: 'flex',
+                                            justifyContent: 'space-between',
+                                            alignItems: 'center',
+                                            margin: '0.5rem'
+                                        }}
+                                    >
+                                        <div style={{ width: '70%' }}>
+                                            <Typography id="transition-modal-title" variant="h6" component="h2">
+                                                Team: SAIX
+                                            </Typography>
+                                        </div>
+                                        <div style={{ width: '30%' }}>
+                                            <Typography id="transition-modal-title" variant="h6" component="h2">
+                                                Sub-Function: Core
+                                            </Typography>
+                                        </div>
+                                    </div>
+                                    <div
+                                        style={{
+                                            display: 'flex',
+                                            justifyContent: 'space-between',
+                                            alignItems: 'center',
+                                            margin: '0.5rem'
+                                        }}
+                                    >
+                                        <div style={{ width: '70%', textAlign: 'left' }}>
+                                            <Typography id="transition-modal-title" variant="h6" component="h2">
+                                                Creation Date: 2/20/2023
+                                            </Typography>
+                                        </div>
+                                        <div style={{ width: '30%', textAlign: 'left' }}>
+                                            <Typography id="transition-modal-title" variant="h6" component="h2">
+                                                Created Time: 12:23:45 PM{' '}
+                                            </Typography>
+                                        </div>
+                                    </div>
+                                    <div
+                                        style={{
+                                            display: 'flex',
+                                            justifyContent: 'space-between',
+                                            alignItems: 'center',
+                                            margin: '0.5rem'
+                                        }}
+                                    >
+                                        <div style={{ width: '70%' }}>
+                                            <Typography id="transition-modal-title" variant="h6" component="h2">
+                                                Closure Date:
+                                            </Typography>
+                                        </div>
+                                        <div style={{ width: '30%', textAlign: 'left' }}>
+                                            <Typography id="transition-modal-title" variant="h6" component="h2">
+                                                Closure Time:
+                                            </Typography>
+                                        </div>
+                                    </div>
+                                    <div
+                                        style={{
+                                            display: 'flex',
+                                            justifyContent: 'space-between',
+                                            alignItems: 'center',
+                                            margin: '0.5rem'
+                                        }}
+                                    >
+                                        <div style={{ width: '70%' }}>
+                                            <Typography id="transition-modal-title" variant="h6" component="h2">
+                                                Asssignee : Sohail
+                                            </Typography>
+                                        </div>
+                                        <div style={{ width: '30%' }}>
+                                            <Typography id="transition-modal-title" variant="h6" component="h2">
+                                                Action Taken : None
+                                            </Typography>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <h4>Recomended Resolution</h4>
+                                    <TableContainer component={Paper}>
+                                        <Table aria-label="simple table">
+                                            <TableHead>
+                                                <TableRow>
+                                                    <TableCell></TableCell>
+                                                    <TableCell>Recomendation</TableCell>
+                                                    <TableCell align="right">Success Percentage</TableCell>
+                                                </TableRow>
+                                            </TableHead>
+                                        </Table>
+                                    </TableContainer>
+                                    <TableContainer component={Paper} style={{ overflowY: 'scroll', height: '10vh' }} class="container">
+                                        <Table aria-label="simple table">
+                                            {/* <TableHead>
+                                            <TableRow>
+                                                <TableCell>Resolution</TableCell>
+                                                <TableCell align="right">Success Percentage</TableCell>
+                                            </TableRow>
+                                        </TableHead> */}
+                                            <TableBody>
+                                                {rows.map((row) => (
+                                                    <TableRow key={row.name} sx={{ '&:last-child td, &:last-child th': { border: 0 } }}>
+                                                        <TableCell align="right">
+                                                            <Checkbox />
+                                                        </TableCell>
+                                                        <TableCell component="th" scope="row">
+                                                            {row.name}
+                                                        </TableCell>
+                                                        <TableCell align="right">{row.calories}</TableCell>
+                                                    </TableRow>
+                                                ))}
+                                            </TableBody>
+                                        </Table>
+                                    </TableContainer>
+                                </div>
+                                <div style={{ width: '100%', display: 'flex', justifyContent: 'right', margin: '1rem' }}>
+                                    <Button variant="contained" align="right" onClick={handleClickOpen1}>
+                                        Submit
+                                    </Button>
+                                    <Dialog
+                                        open={open1}
+                                        onClose={handleClose1}
+                                        aria-labelledby="alert-dialog-title"
+                                        aria-describedby="alert-dialog-description"
+                                    >
+                                        <DialogContent>
+                                            <DialogContentText id="alert-dialog-description">Email has been sent</DialogContentText>
+                                        </DialogContent>
+                                        <DialogActions>
+                                            <Button onClick={handleClose}>OK</Button>
+                                        </DialogActions>
+                                    </Dialog>
+                                </div>
+                            </Box>
+                        </Modal>
+                    </div>
+                </div>
+                <div style={bottomLine} />
+                <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '5vh' }}>
+                    <div style={{ width: '25%', display: 'flex', alignItems: 'center' }}>
+                        <h5 style={yellow}>PMRZRLGG0662</h5>
+                    </div>
+                    <div style={{ width: '10%', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+                        <h5>97.09% </h5>
+                    </div>
+                    <div
+                        style={{
+                            width: '10%',
+                            display: 'flex',
+                            justifyContent: 'center',
+                            alignItems: 'center'
+                        }}
+                    >
+                        <h5>UP East</h5>
+                    </div>
+                    <div
+                        style={{
+                            width: '15%',
+                            display: 'flex',
+                            justifyContent: 'center',
+                            alignItems: 'center'
+                        }}
+                    >
+                        <h5>16.994444</h5>
+                    </div>
+                    <div
+                        style={{
+                            width: '20%',
+                            display: 'flex',
+                            justifyContent: 'center',
+                            alignItems: 'center'
+                        }}
+                    >
+                        <h5>74.629997</h5>
+                    </div>
+                    <div style={{ width: '20%', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+                        <Button variant="text">View</Button>
+                    </div>
+                </div>
+                <div style={bottomLine} />
+                <div style={{ display: 'flex', justifyContent: 'center', alignItem: 'center', height: '5vh' }}>
+                    <div style={{ width: '25%', display: 'flex', alignItems: 'center' }}>
+                        <h5 style={yellow}>PMRZRLGG0662</h5>
+                    </div>
+                    <div style={{ width: '10%', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+                        <h5>95.45% {/* 99.21% 95.69% 98.31% 97.09% 95.45% */}</h5>
+                    </div>
+                    <div
+                        style={{
+                            width: '10%',
+                            display: 'flex',
+                            justifyContent: 'center',
+                            alignItems: 'center'
+                        }}
+                    >
+                        <h5>UP East</h5>
+                    </div>
+                    <div
+                        style={{
+                            width: '15%',
+                            display: 'flex',
+                            justifyContent: 'center',
+                            alignItems: 'center'
+                        }}
+                    >
+                        <h5>24.879999</h5>
+                    </div>
+                    <div
+                        style={{
+                            width: '20%',
+                            display: 'flex',
+                            justifyContent: 'center',
+                            alignItems: 'center'
+                        }}
+                    >
+                        <h5>73.300003</h5>
+                    </div>
+                    <div style={{ width: '20%', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+                        <Button variant="text">View</Button>
+                    </div>
+                </div>
+                <div style={bottomLine} />
+                <div style={{ display: 'flex', justifyContent: 'center', alignItem: 'center', height: '5vh' }}>
+                    <div style={{ width: '30%', display: 'flex', alignItems: 'center' }}>
+                        <h5 style={yellow}>EMRZRLGG0662</h5>
+                    </div>
+                    <div style={{ width: '10%', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+                        <h5> 97.09%</h5>
+                    </div>
+                    <div
+                        style={{
+                            width: '15%',
                             display: 'flex',
                             justifyContent: 'center',
                             alignItems: 'center'
@@ -365,222 +712,12 @@ function CriticalEle() {
                     </div>
                 </div>
                 <div style={bottomLine} />
-                <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '5vh' }}>
-                    <div style={{ width: '25%', display: 'flex', alignItems: 'center' }}>
-                        <h5 style={yellow}>PSNBRNKC0022</h5>
-                    </div>
-                    <div style={{ width: '10%', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-                        <h5>99.53%</h5>
-                    </div>
-                    <div
-                        style={{
-                            width: '10%',
-                            display: 'flex',
-                            justifyContent: 'center',
-                            alignItems: 'center'
-                        }}
-                    >
-                        <h5>UP East</h5>
-                    </div>
-                    <div
-                        style={{
-                            width: '15%',
-                            display: 'flex',
-                            justifyContent: 'center',
-                            alignItems: 'center'
-                        }}
-                    >
-                        <h5>16.994444</h5>
-                    </div>
-                    <div
-                        style={{
-                            width: '20%',
-                            display: 'flex',
-                            justifyContent: 'center',
-                            alignItems: 'center'
-                        }}
-                    >
-                        <h5>74.629997</h5>
-                    </div>
-                    <div style={{ width: '20%', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
-                        <Button variant="text">View</Button>
-                    </div>
-                </div>
-                <div style={bottomLine} />
-                <div style={{ display: 'flex', justifyContent: 'center', alignItem: 'center', height: '5vh' }}>
-                    <div style={{ width: '25%', display: 'flex', alignItems: 'center' }}>
-                        <h5 style={yellow}>EMRZRLGG0662</h5>
-                    </div>
-                    <div style={{ width: '10%', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-                        <h5>99.51% </h5>
-                    </div>
-                    <div
-                        style={{
-                            width: '10%',
-                            display: 'flex',
-                            justifyContent: 'center',
-                            alignItems: 'center'
-                        }}
-                    >
-                        <h5>UP East</h5>
-                    </div>
-                    <div
-                        style={{
-                            width: '15%',
-                            display: 'flex',
-                            justifyContent: 'center',
-                            alignItems: 'center'
-                        }}
-                    >
-                        <h5>24.879999</h5>
-                    </div>
-                    <div
-                        style={{
-                            width: '20%',
-                            display: 'flex',
-                            justifyContent: 'center',
-                            alignItems: 'center'
-                        }}
-                    >
-                        <h5>73.300003</h5>
-                    </div>
-                    <div style={{ width: '20%', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
-                        <Button variant="text">View</Button>
-                    </div>
-                </div>
-                <div style={bottomLine} />
-                <div style={{ display: 'flex', justifyContent: 'center', alignItem: 'center', height: '5vh' }}>
-                    <div style={{ width: '25%', display: 'flex', alignItems: 'center' }}>
-                        <h5 style={yellow}>PSNBSKSC0012</h5>
-                    </div>
-                    <div style={{ width: '10%', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-                        <h5>99.67% </h5>
-                    </div>
-                    <div
-                        style={{
-                            width: '10%',
-                            display: 'flex',
-                            justifyContent: 'center',
-                            alignItems: 'center'
-                        }}
-                    >
-                        <h5>UP East</h5>
-                    </div>
-                    <div
-                        style={{
-                            width: '15%',
-                            display: 'flex',
-                            justifyContent: 'center',
-                            alignItems: 'center'
-                        }}
-                    >
-                        <h5>19.155001</h5>
-                    </div>
-                    <div
-                        style={{
-                            width: '20%',
-                            display: 'flex',
-                            justifyContent: 'center',
-                            alignItems: 'center'
-                        }}
-                    >
-                        <h5>72.849998</h5>
-                    </div>
-                    <div style={{ width: '20%', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
-                        <Button variant="text">View</Button>
-                    </div>
-                </div>
-                <div style={bottomLine} />
                 <div style={{ display: 'flex', justifyContent: 'center', alignItem: 'center', height: '5vh' }}>
                     <div style={{ width: '25%', display: 'flex', alignItems: 'center' }}>
                         <h5 style={yellow}>PVRSCHUC0012</h5>
                     </div>
                     <div style={{ width: '10%', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-                        <h5>99.56% </h5>
-                    </div>
-                    <div
-                        style={{
-                            width: '10%',
-                            display: 'flex',
-                            justifyContent: 'center',
-                            alignItems: 'center'
-                        }}
-                    >
-                        <h5>UP East</h5>
-                    </div>
-                    <div
-                        style={{
-                            width: '15%',
-                            display: 'flex',
-                            justifyContent: 'center',
-                            alignItems: 'center'
-                        }}
-                    >
-                        <h5>24.7945</h5>
-                    </div>
-                    <div
-                        style={{
-                            width: '20%',
-                            display: 'flex',
-                            justifyContent: 'center',
-                            alignItems: 'center'
-                        }}
-                    >
-                        <h5>73.055</h5>
-                    </div>
-                    <div style={{ width: '20%', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
-                        <Button variant="text">View</Button>
-                    </div>
-                </div>
-                <div style={bottomLine} />
-                <div style={{ display: 'flex', justifyContent: 'center', alignItem: 'center', height: '5vh' }}>
-                    <div style={{ width: '25%', display: 'flex', alignItems: 'center' }}>
-                        <h5 style={yellow}>PVRSCHUC0012</h5>
-                    </div>
-                    <div style={{ width: '10%', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-                        <h5>99.56% </h5>
-                    </div>
-                    <div
-                        style={{
-                            width: '10%',
-                            display: 'flex',
-                            justifyContent: 'center',
-                            alignItems: 'center'
-                        }}
-                    >
-                        <h5>UP East</h5>
-                    </div>
-                    <div
-                        style={{
-                            width: '15%',
-                            display: 'flex',
-                            justifyContent: 'center',
-                            alignItems: 'center'
-                        }}
-                    >
-                        <h5>24.7945</h5>
-                    </div>
-                    <div
-                        style={{
-                            width: '20%',
-                            display: 'flex',
-                            justifyContent: 'center',
-                            alignItems: 'center'
-                        }}
-                    >
-                        <h5>73.055</h5>
-                    </div>
-                    <div style={{ width: '20%', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
-                        <Button variant="text">View</Button>
-                    </div>
-                </div>
-                <div style={bottomLine} />
-                <div style={{ display: 'flex', justifyContent: 'center', alignItem: 'center', height: '5vh' }}>
-                    <div style={{ width: '25%', display: 'flex', alignItems: 'center' }}>
-                        <h5 style={yellow}>PVRSCHUC0012</h5>
-                    </div>
-                    <div style={{ width: '10%', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-                        <h5>99.19% </h5>
+                        <h5>95.69% {/*   98.31% 97.09% 95.45% */}</h5>
                     </div>
                     <div
                         style={{

@@ -15,6 +15,9 @@ import MenuItem from '@mui/material/MenuItem';
 import FormControl from '@mui/material/FormControl';
 import Select from '@mui/material/Select';
 import KpiModal from './KpiModal';
+import CriticalEle12 from './kpi12/CriticalEle';
+import NormalEle12 from './kpi12/NormalEle';
+import MediumEle12 from './kpi12/MediumEle';
 
 const style = {
     position: 'absolute',
@@ -148,7 +151,7 @@ function Critical() {
                                     </div>
                                 </div>
                                 <div style={{ margin: '1rem' }}>
-                                    {kpi == 'Average' ? <MediumEle /> : kpi == 'Normal' ? <NormalEle /> : <CriticalEle />}
+                                    {kpi == 'Average' ? <MediumEle12 /> : kpi == 'Normal' ? <NormalEle12 /> : <CriticalEle12 />}
                                 </div>
                             </Box>
                         </Fade>

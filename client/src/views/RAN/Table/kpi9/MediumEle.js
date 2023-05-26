@@ -1,7 +1,7 @@
 import React from 'react';
 import { Grid } from '@mui/material';
 import Button from '@mui/material/Button';
-import './Style/Scroll.css';
+import '../Style/Scroll.css';
 import Backdrop from '@mui/material/Backdrop';
 import Box from '@mui/material/Box';
 import Modal from '@mui/material/Modal';
@@ -67,7 +67,7 @@ function CriticalEle() {
     ];
 
     let yellow = {
-        color: 'green'
+        color: '#FCA510'
     };
 
     const critical = {
@@ -97,7 +97,7 @@ function CriticalEle() {
                     <h3>Network Elements</h3>
                 </div>
                 <div style={{ width: '10%', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-                    <h3>Value</h3>
+                    <h3>Values</h3>
                 </div>
                 <div style={{ width: '10%', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
                     <h3>Location</h3>
@@ -117,7 +117,7 @@ function CriticalEle() {
                         <h5 style={yellow}>EMRZRLGG0662</h5>
                     </div>
                     <div style={{ width: '10%', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-                        <h5>99.56%</h5>
+                        <h5>98.31%{/*    97.09% 95.45% */}</h5>
                     </div>
                     <div
                         style={{
@@ -362,258 +362,6 @@ function CriticalEle() {
                                 </div>
                             </Box>
                         </Modal>
-                    </div>
-                </div>
-                <div style={bottomLine} />
-                <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '5vh' }}>
-                    <div style={{ width: '25%', display: 'flex', alignItems: 'center' }}>
-                        <h5 style={yellow}>PSNBRNKC0022</h5>
-                    </div>
-                    <div style={{ width: '10%', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-                        <h5>99.53%</h5>
-                    </div>
-                    <div
-                        style={{
-                            width: '10%',
-                            display: 'flex',
-                            justifyContent: 'center',
-                            alignItems: 'center'
-                        }}
-                    >
-                        <h5>UP East</h5>
-                    </div>
-                    <div
-                        style={{
-                            width: '15%',
-                            display: 'flex',
-                            justifyContent: 'center',
-                            alignItems: 'center'
-                        }}
-                    >
-                        <h5>16.994444</h5>
-                    </div>
-                    <div
-                        style={{
-                            width: '20%',
-                            display: 'flex',
-                            justifyContent: 'center',
-                            alignItems: 'center'
-                        }}
-                    >
-                        <h5>74.629997</h5>
-                    </div>
-                    <div style={{ width: '20%', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
-                        <Button variant="text">View</Button>
-                    </div>
-                </div>
-                <div style={bottomLine} />
-                <div style={{ display: 'flex', justifyContent: 'center', alignItem: 'center', height: '5vh' }}>
-                    <div style={{ width: '25%', display: 'flex', alignItems: 'center' }}>
-                        <h5 style={yellow}>EMRZRLGG0662</h5>
-                    </div>
-                    <div style={{ width: '10%', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-                        <h5>99.51% </h5>
-                    </div>
-                    <div
-                        style={{
-                            width: '10%',
-                            display: 'flex',
-                            justifyContent: 'center',
-                            alignItems: 'center'
-                        }}
-                    >
-                        <h5>UP East</h5>
-                    </div>
-                    <div
-                        style={{
-                            width: '15%',
-                            display: 'flex',
-                            justifyContent: 'center',
-                            alignItems: 'center'
-                        }}
-                    >
-                        <h5>24.879999</h5>
-                    </div>
-                    <div
-                        style={{
-                            width: '20%',
-                            display: 'flex',
-                            justifyContent: 'center',
-                            alignItems: 'center'
-                        }}
-                    >
-                        <h5>73.300003</h5>
-                    </div>
-                    <div style={{ width: '20%', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
-                        <Button variant="text">View</Button>
-                    </div>
-                </div>
-                <div style={bottomLine} />
-                <div style={{ display: 'flex', justifyContent: 'center', alignItem: 'center', height: '5vh' }}>
-                    <div style={{ width: '25%', display: 'flex', alignItems: 'center' }}>
-                        <h5 style={yellow}>PSNBSKSC0012</h5>
-                    </div>
-                    <div style={{ width: '10%', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-                        <h5>99.67% </h5>
-                    </div>
-                    <div
-                        style={{
-                            width: '10%',
-                            display: 'flex',
-                            justifyContent: 'center',
-                            alignItems: 'center'
-                        }}
-                    >
-                        <h5>UP East</h5>
-                    </div>
-                    <div
-                        style={{
-                            width: '15%',
-                            display: 'flex',
-                            justifyContent: 'center',
-                            alignItems: 'center'
-                        }}
-                    >
-                        <h5>19.155001</h5>
-                    </div>
-                    <div
-                        style={{
-                            width: '20%',
-                            display: 'flex',
-                            justifyContent: 'center',
-                            alignItems: 'center'
-                        }}
-                    >
-                        <h5>72.849998</h5>
-                    </div>
-                    <div style={{ width: '20%', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
-                        <Button variant="text">View</Button>
-                    </div>
-                </div>
-                <div style={bottomLine} />
-                <div style={{ display: 'flex', justifyContent: 'center', alignItem: 'center', height: '5vh' }}>
-                    <div style={{ width: '25%', display: 'flex', alignItems: 'center' }}>
-                        <h5 style={yellow}>PVRSCHUC0012</h5>
-                    </div>
-                    <div style={{ width: '10%', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-                        <h5>99.56% </h5>
-                    </div>
-                    <div
-                        style={{
-                            width: '10%',
-                            display: 'flex',
-                            justifyContent: 'center',
-                            alignItems: 'center'
-                        }}
-                    >
-                        <h5>UP East</h5>
-                    </div>
-                    <div
-                        style={{
-                            width: '15%',
-                            display: 'flex',
-                            justifyContent: 'center',
-                            alignItems: 'center'
-                        }}
-                    >
-                        <h5>24.7945</h5>
-                    </div>
-                    <div
-                        style={{
-                            width: '20%',
-                            display: 'flex',
-                            justifyContent: 'center',
-                            alignItems: 'center'
-                        }}
-                    >
-                        <h5>73.055</h5>
-                    </div>
-                    <div style={{ width: '20%', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
-                        <Button variant="text">View</Button>
-                    </div>
-                </div>
-                <div style={bottomLine} />
-                <div style={{ display: 'flex', justifyContent: 'center', alignItem: 'center', height: '5vh' }}>
-                    <div style={{ width: '25%', display: 'flex', alignItems: 'center' }}>
-                        <h5 style={yellow}>PVRSCHUC0012</h5>
-                    </div>
-                    <div style={{ width: '10%', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-                        <h5>99.56% </h5>
-                    </div>
-                    <div
-                        style={{
-                            width: '10%',
-                            display: 'flex',
-                            justifyContent: 'center',
-                            alignItems: 'center'
-                        }}
-                    >
-                        <h5>UP East</h5>
-                    </div>
-                    <div
-                        style={{
-                            width: '15%',
-                            display: 'flex',
-                            justifyContent: 'center',
-                            alignItems: 'center'
-                        }}
-                    >
-                        <h5>24.7945</h5>
-                    </div>
-                    <div
-                        style={{
-                            width: '20%',
-                            display: 'flex',
-                            justifyContent: 'center',
-                            alignItems: 'center'
-                        }}
-                    >
-                        <h5>73.055</h5>
-                    </div>
-                    <div style={{ width: '20%', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
-                        <Button variant="text">View</Button>
-                    </div>
-                </div>
-                <div style={bottomLine} />
-                <div style={{ display: 'flex', justifyContent: 'center', alignItem: 'center', height: '5vh' }}>
-                    <div style={{ width: '25%', display: 'flex', alignItems: 'center' }}>
-                        <h5 style={yellow}>PVRSCHUC0012</h5>
-                    </div>
-                    <div style={{ width: '10%', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-                        <h5>99.19% </h5>
-                    </div>
-                    <div
-                        style={{
-                            width: '10%',
-                            display: 'flex',
-                            justifyContent: 'center',
-                            alignItems: 'center'
-                        }}
-                    >
-                        <h5>UP East</h5>
-                    </div>
-                    <div
-                        style={{
-                            width: '15%',
-                            display: 'flex',
-                            justifyContent: 'center',
-                            alignItems: 'center'
-                        }}
-                    >
-                        <h5>24.7945</h5>
-                    </div>
-                    <div
-                        style={{
-                            width: '20%',
-                            display: 'flex',
-                            justifyContent: 'center',
-                            alignItems: 'center'
-                        }}
-                    >
-                        <h5>73.055</h5>
-                    </div>
-                    <div style={{ width: '20%', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
-                        <Button variant="text">View</Button>
                     </div>
                 </div>
                 <div style={bottomLine} />

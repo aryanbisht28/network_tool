@@ -10,6 +10,39 @@ import LineChart from './LineChart';
 import CriticalEle from './CriticalEle';
 import NormalEle from './NormalEle';
 import MediumEle from './MediumEle';
+import CriticalEle2 from './kpi2/CriticalEle';
+import NormalEle2 from './kpi2/NormalEle';
+import MediumEle2 from './kpi2/MediumEle';
+import CriticalEle3 from './kpi3/CriticalEle';
+import NormalEle3 from './kpi3/NormalEle';
+import MediumEle3 from './kpi3/MediumEle';
+import CriticalEle4 from './kpi4/CriticalEle';
+import NormalEle4 from './kpi4/NormalEle';
+import MediumEle4 from './kpi4/MediumEle';
+import CriticalEle5 from './kpi5/CriticalEle';
+import NormalEle5 from './kpi5/NormalEle';
+import MediumEle5 from './kpi5/MediumEle';
+import CriticalEle6 from './kpi6/CriticalEle';
+import NormalEle6 from './kpi6/NormalEle';
+import MediumEle6 from './kpi6/MediumEle';
+import CriticalEle7 from './kpi7/CriticalEle';
+import NormalEle7 from './kpi7/NormalEle';
+import MediumEle7 from './kpi7/MediumEle';
+import CriticalEle8 from './kpi8/CriticalEle';
+import NormalEle8 from './kpi8/NormalEle';
+import MediumEle8 from './kpi8/MediumEle';
+import CriticalEle9 from './kpi9/CriticalEle';
+import NormalEle9 from './kpi9/NormalEle';
+import MediumEle9 from './kpi9/MediumEle';
+import CriticalEle10 from './kpi10/CriticalEle';
+import NormalEle10 from './kpi10/NormalEle';
+import MediumEle10 from './kpi10/MediumEle';
+import CriticalEle11 from './kpi11/CriticalEle';
+import NormalEle11 from './kpi11/NormalEle';
+import MediumEle11 from './kpi11/MediumEle';
+import CriticalEle12 from './kpi12/CriticalEle';
+import NormalEle12 from './kpi12/NormalEle';
+import MediumEle12 from './kpi12/MediumEle';
 import InputLabel from '@mui/material/InputLabel';
 import MenuItem from '@mui/material/MenuItem';
 import FormControl from '@mui/material/FormControl';
@@ -261,7 +294,7 @@ function Normal() {
                                     </div>
                                 </div>
                                 <div style={{ margin: '1rem' }}>
-                                    {kpi == 'Average' ? <MediumEle /> : kpi == 'Normal' ? <NormalEle /> : <CriticalEle />}
+                                    {kpi == 'Average' ? <MediumEle2 /> : kpi == 'Normal' ? <NormalEle2 /> : <CriticalEle2 />}
                                 </div>
                             </Box>
                         </Fade>
@@ -346,7 +379,7 @@ function Normal() {
                                     </div>
                                 </div>
                                 <div style={{ margin: '1rem' }}>
-                                    {kpi == 'Average' ? <MediumEle /> : kpi == 'Normal' ? <NormalEle /> : <CriticalEle />}
+                                    {kpi == 'Average' ? <MediumEle3 /> : kpi == 'Normal' ? <NormalEle3 /> : <CriticalEle3 />}
                                 </div>
                             </Box>
                         </Fade>
@@ -431,7 +464,7 @@ function Normal() {
                                     </div>
                                 </div>
                                 <div style={{ margin: '1rem' }}>
-                                    {kpi == 'Average' ? <MediumEle /> : kpi == 'Normal' ? <NormalEle /> : <CriticalEle />}
+                                    {kpi == 'Average' ? <MediumEle4 /> : kpi == 'Normal' ? <NormalEle4 /> : <CriticalEle4 />}
                                 </div>
                             </Box>
                         </Fade>
@@ -516,7 +549,7 @@ function Normal() {
                                     </div>
                                 </div>
                                 <div style={{ margin: '1rem' }}>
-                                    {kpi == 'Average' ? <MediumEle /> : kpi == 'Normal' ? <NormalEle /> : <CriticalEle />}
+                                    {kpi == 'Average' ? <MediumEle5 /> : kpi == 'Normal' ? <NormalEle5 /> : <CriticalEle5 />}
                                 </div>
                             </Box>
                         </Fade>
@@ -601,7 +634,7 @@ function Normal() {
                                     </div>
                                 </div>
                                 <div style={{ margin: '1rem' }}>
-                                    {kpi == 'Average' ? <MediumEle /> : kpi == 'Normal' ? <NormalEle /> : <CriticalEle />}
+                                    {kpi == 'Average' ? <MediumEle6 /> : kpi == 'Normal' ? <NormalEle6 /> : <CriticalEle6 />}
                                 </div>
                             </Box>
                         </Fade>
@@ -686,7 +719,7 @@ function Normal() {
                                     </div>
                                 </div>
                                 <div style={{ margin: '1rem' }}>
-                                    {kpi == 'Average' ? <MediumEle /> : kpi == 'Normal' ? <NormalEle /> : <CriticalEle />}
+                                    {kpi == 'Average' ? <MediumEle7 /> : kpi == 'Normal' ? <NormalEle7 /> : <CriticalEle7 />}
                                 </div>
                             </Box>
                         </Fade>
@@ -766,7 +799,7 @@ function Normal() {
                                     </div>
                                 </div>
                                 <div style={{ margin: '1rem' }}>
-                                    {kpi == 'Average' ? <MediumEle /> : kpi == 'Normal' ? <NormalEle /> : <CriticalEle />}
+                                    {kpi == 'Average' ? <MediumEle8 /> : kpi == 'Normal' ? <NormalEle8 /> : <CriticalEle8 />}
                                 </div>
                             </Box>
                         </Fade>

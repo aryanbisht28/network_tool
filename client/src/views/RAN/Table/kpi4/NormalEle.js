@@ -1,7 +1,7 @@
 import React from 'react';
 import { Grid } from '@mui/material';
 import Button from '@mui/material/Button';
-import './Style/Scroll.css';
+import '../Style/Scroll.css';
 import Backdrop from '@mui/material/Backdrop';
 import Box from '@mui/material/Box';
 import Modal from '@mui/material/Modal';
@@ -21,7 +21,6 @@ import DialogContent from '@mui/material/DialogContent';
 import DialogContentText from '@mui/material/DialogContentText';
 import DialogTitle from '@mui/material/DialogTitle';
 import { width } from '@mui/system';
-import CloseIcon from '@mui/icons-material/Close';
 
 const style = {
     position: 'absolute',
@@ -29,7 +28,7 @@ const style = {
     left: '50%',
     transform: 'translate(-50%, -50%)',
     width: 800,
-    height: 570,
+    height: 550,
     bgcolor: 'background.paper',
     // border: '2px solid #000',
     boxShadow: 24,
@@ -68,7 +67,7 @@ function CriticalEle() {
     ];
 
     let yellow = {
-        color: '#FF0000'
+        color: 'green'
     };
 
     const critical = {
@@ -94,11 +93,13 @@ function CriticalEle() {
     return (
         <>
             <div style={{ display: 'flex', justifyContent: 'center', alignItem: 'center', height: '5vh' }}>
-                <div style={{ width: '30%', display: 'flex', alignItems: 'center' }}>
+                <div style={{ width: '25%', display: 'flex', alignItems: 'center' }}>
                     <h3>Network Elements</h3>
                 </div>
-
-                <div style={{ width: '15%', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+                <div style={{ width: '10%', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+                    <h3>Value</h3>
+                </div>
+                <div style={{ width: '10%', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
                     <h3>Location</h3>
                 </div>
                 <div style={{ width: '15%', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
@@ -110,6 +111,50 @@ function CriticalEle() {
                 <div style={{ width: '20%', display: 'flex', justifyContent: 'center', alignItems: 'center' }}></div>
             </div>
             <div style={bottomLine} />
+            <div className="container" style={{ overflowY: 'scroll', height: '7vh' }}>
+                <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '5vh' }}>
+                    <div style={{ width: '25%', display: 'flex', alignItems: 'center' }}>
+                        <h5 style={yellow}>PSNBRNKC0022</h5>
+                    </div>
+                    <div style={{ width: '10%', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+                        <h5>99.21%</h5>
+                    </div>
+                    <div
+                        style={{
+                            width: '10%',
+                            display: 'flex',
+                            justifyContent: 'center',
+                            alignItems: 'center'
+                        }}
+                    >
+                        <h5>UP East</h5>
+                    </div>
+                    <div
+                        style={{
+                            width: '15%',
+                            display: 'flex',
+                            justifyContent: 'center',
+                            alignItems: 'center'
+                        }}
+                    >
+                        <h5>16.994444</h5>
+                    </div>
+                    <div
+                        style={{
+                            width: '20%',
+                            display: 'flex',
+                            justifyContent: 'center',
+                            alignItems: 'center'
+                        }}
+                    >
+                        <h5>74.629997</h5>
+                    </div>
+                    <div style={{ width: '20%', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+                        <Button variant="text">View</Button>
+                    </div>
+                </div>
+                <div style={bottomLine} />
+            </div>
         </>
     );
 }

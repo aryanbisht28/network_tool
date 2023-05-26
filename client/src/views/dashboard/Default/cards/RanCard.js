@@ -28,7 +28,7 @@ const CardWrapper = styled(MainCard)(({ theme }) => ({
 // }
 
 const RanCard = ({ isLoading }) => {
-    const value = 0.98;
+    const value = 99.11;
     return (
         <>
             {isLoading ? (
@@ -55,7 +55,7 @@ const RanCard = ({ isLoading }) => {
                             <Grid item>
                                 <Grid>
                                     <Grid style={{ width: 90, height: 90 }}>
-                                        <CircularProgressbar value={value} maxValue={1} text={`${value * 100}%`} />
+                                        <CircularProgressbar value={value} maxValue={1} text={`${value}%`} />
                                     </Grid>
                                 </Grid>
                             </Grid>

@@ -14,7 +14,15 @@ import InputLabel from '@mui/material/InputLabel';
 import MenuItem from '@mui/material/MenuItem';
 import FormControl from '@mui/material/FormControl';
 import Select from '@mui/material/Select';
-
+import CriticalEle9 from './kpi9/CriticalEle';
+import NormalEle9 from './kpi9/NormalEle';
+import MediumEle9 from './kpi9/MediumEle';
+import CriticalEle10 from './kpi10/CriticalEle';
+import NormalEle10 from './kpi10/NormalEle';
+import MediumEle10 from './kpi10/MediumEle';
+import CriticalEle11 from './kpi11/CriticalEle';
+import NormalEle11 from './kpi11/NormalEle';
+import MediumEle11 from './kpi11/MediumEle';
 const style = {
     position: 'absolute',
     top: '50%',
@@ -143,7 +151,7 @@ function Medium() {
                                     </div>
                                 </div>
                                 <div style={{ margin: '1rem' }}>
-                                    {kpi == 'Average' ? <MediumEle /> : kpi == 'Normal' ? <NormalEle /> : <CriticalEle />}
+                                    {kpi == 'Average' ? <MediumEle9 /> : kpi == 'Normal' ? <NormalEle9 /> : <CriticalEle9 />}
                                 </div>
                             </Box>
                         </Fade>
@@ -228,7 +236,7 @@ function Medium() {
                                     </div>
                                 </div>
                                 <div style={{ margin: '1rem' }}>
-                                    {kpi == 'Average' ? <MediumEle /> : kpi == 'Normal' ? <NormalEle /> : <CriticalEle />}
+                                    {kpi == 'Average' ? <MediumEle10 /> : kpi == 'Normal' ? <NormalEle10 /> : <CriticalEle10 />}
                                 </div>
                             </Box>
                         </Fade>
@@ -313,7 +321,7 @@ function Medium() {
                                     </div>
                                 </div>
                                 <div style={{ margin: '1rem' }}>
-                                    {kpi == 'Average' ? <MediumEle /> : kpi == 'Normal' ? <NormalEle /> : <CriticalEle />}
+                                    {kpi == 'Average' ? <MediumEle11 /> : kpi == 'Normal' ? <NormalEle11 /> : <CriticalEle11 />}
                                 </div>
                             </Box>
                         </Fade>
